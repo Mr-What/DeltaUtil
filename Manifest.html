@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<TITLE>DeltaUtil Manifest</TITLE>
+</head>
+<BODY STYLE="font-family: Arial, Helvetica">
+<H1 center>DeltaUtil Manifest</H1>
+<DL compact>
+<DT>bedProbeRandGrid.pl</DT>
+<DD>generate gcode for a random ordered prone of print bed</DD>
+<DT>cart2delta.m</DT><DD>basic inverse kinematic equations</DD>
+<DT>computeCalDist.pl</DT>
+<DD>Given text data files defining location of calibration print reference points,
+and pairs of points whose seperation can readily be measured, compute
+the distances between these pairs of points, and write them to a text data file.</DD>
+<DT>delta2cart.m</DT><DD>basic kinematic equations</DD>
+<DT>deltaCalXYZ.m</DT><DD>High-level procedure to estimate complete
+calibration parameters set given both bed probe and calibration print measurements.
+Will estimate best-fit printer calibration parameters.</DT>
+<DT>deltaErrXY.m</DT><DD>Error metric for calibration print measurements w.r.t. estimated printer parameters.</DT>
+<DT>deltaErrZ.m</DT><DD>Error metric for bed probe w.r.t. estimated printer parameters.</DT>
+<DT>deltaTestA.scad</DT><DD>Calibration test object model</DD>
+<DT>deltaTestA.svg</DT><DD>Drawing of deltaTestA model, with calibration points annotated</DD>
+<DT>deltaTestA.png</DT><DD>render of calibration test model</DD>
+<DT>extractProbeData.pl</DT><DD>extract bed probe numbers from Marlin console output for analysis</DD>
+<DT>getExtremaIndices.m</DT><DD>part of SimplexMinimize</DD>
+<DT>getFieldDef.m</DT><DD>utility for extracting fields from structures</DD>
+<DT>getIndex.m</DT><DD>part of calibration print definition parsing</DD>
+<DT>gLace.pl</DT><DD>generates g-code for test print that spans whole printbed.
+Good for testing quality of bed tramming adjustment.</DD>
+<DT>guessDeltaEndstopErr.m</DT><DD>estimates best fit endstop offsets from bed probe data, without altering other printer parameters</DD>
+<DT>guessDeltaErr4.m</DT><DD>estimates best fit endstop offsets and uniform delta radius from bed probe data, without altering other printer parameters</DD>
+<DT>guessDeltaErr6.m</DT><DD>estimates best fit endstop offsets and unique delta radius from bed probe data, without altering other printer parameters</DD>
+<DT>guessDeltaErrXYZ.m</DT><DD>Main routine to guess endstops offsets, delta radii, and rod-length (and spread) from a combination of bed probe data and calibration object measurements</DD>
+<DT>guessDeltaXYerr.m</DT><DD>guess delta radii, and rod-length (and spread) from calibration object measurements alone</DD>
+<DT>loadXYcalDef.m</DT><DD>Load calibration print measurement definitions</DD>
+<DT>loadXYcalMeas.m</DT><DD>Load calibration print measurements</DD>
+<DT>plotParabolicFit.m</DT><DD>Plot a parabolic fit to a set of bed-probe measuirements, and provide the fit polynomial coefficients
+<DT>plotXYdistort.m</DT><DD>produce wind-vector like plot of XY placement distortions</DD>
+<DT>sampleMeans.m</DT><DD>given a set of bed measurements, many of which may be repeated, condense the list into averages of the repeated measurements.</DD>
+<DT>SimplexExitCriteriaMet.m</DT><DD>exit test for SimplexMinimize</DD>
+<DT>SimplexMinimize.m</DT><DD>Main simplex search routine</DD>
+<DT>SimplexUpdate.m</DT><DD>part of SimplexMinimize</DD>
+<DT>XYcalPairsA.dat</DT><DD>definition of measurement pairs for deltaTestA object</DD>
+<DT>XYcalPointsA.dat</DT><DD>definition of calibration points on deltaTestA object</DD>
+
+
+</DL>
+
+</body></html>

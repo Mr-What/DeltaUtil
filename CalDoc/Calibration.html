@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<TITLE>Calibration of Deltabots</TITLE>
+</head>
+<H1 center>Calibration of Delta 3D Printers</H1>
+
+<BODY STYLE="font-family: Arial, Helvetica">
+There are many tutorials on the calibration of Deltabots, like delta 3D printers.
+Many cover an inexact manual method which can be slow to converge.
+This essay covers a minimalistic automated procedure with fast convergence.
+Key calibration parameters are identified, and solved for by brute force search,
+and observations are provided to help increase understanding of the effects
+of common fabrication innacuracies on the performance and accuracy of a deltabot.
+
+<H2>Calibration Distortion Examples</H2>
+
+As the effector is commanded to scan over the bed, the commanded height
+on each tower follows a pattern like:
+<IMG SRC="CarriagePosition.svg">
+for an ideal deltabot in perfect calibration.
+
+<H3>Rod Length</H3>
+<P>The scale of a printed object depends on the length of the delta rods.
+Since this dimension is measurable, I prefer to leave it constant as much as possible.
+If it is mis-measured, you can get bed-scan distortions like these:
+<IMG SRC="distortLongRod.svg">
+<IMG SRC="distortShortRod.svg">
+You may note that there is a height shift on the close order to the amount
+of measurement error in the diagonal rod, and a very small curvature distortion,
+which I will call <B>bowl/dome distortion</B>.
+Shift up and down is hard to measure, and usually calibrated, so it is hard to measure
+diagonal rod length errors from bed probes.
+The bowl/dome distortion is rather small compared to the level shift.
+These are all reasons why I advocate for measuring diagonal rod length carefully,
+and holding it fixed for most calibrations.
+
+<P>The rod length can also contribute to scale distortion:
+<IMG SRC="rodLenXYdistort.svg" width="100%">
+Note that the maximun displacement error here is about 0.8mm from a 1mm error,
+as opposed to around 0.1mm from the bed.
+It seems that scale is more sensitive to rod length than Z ordinate.
+
+<H3>Delta Radius</H3>
+<P>You will note that the distortion from the diagonal rod length is similar
+to the distortion from a mis-set DELTA_RADIUS:
+<IMG SRC="distortShortRADIUS.svg">
+<IMG SRC="distortLongRADIUS.svg">
+Note that the bowl/dome distortion from this error is about 4x as pronounced
+as the bowl/dome distortion caused by the same error in delta rod length.
+This makes DELTA_RADIUS a better candidate for computation by calibration procedures,
+as compared to the diagonal rod length.
+
+<P>The DELTA_RADIUS is <EM>virtual</EM> and hard to measure.
+It would be the distance from the center of pivots on the effector head to
+the center of the pivots on the tower carriages, when the effector is centered,
+projected into the ideal bed plane.
+Since the location of <em>center</em> somewhat arbitrary, and it
+is hard to measure projections of virtual points into a virtual ideal plane,
+this measurement is best left to calibration, and not measurement.
+
+<P>Like the rod length, the delta radius can cause a scale distortion in the XY plane:
+<IMG SRC="radiusXYdistort.svg" width="100%">
+
+<H3>Tower Zero Level</H3>
+<P>One of the most common errors would be tower endstop settings.
+When these are in error, the primary effect is to produce a tilt to the
+bed scan:
+<IMG SRC="distortTowerUp.svg">
+This will be the most common distortion, and must be tracked reguarly,
+or your prints may not stick to the bed properly, or worse you may crash your
+hotend into the bed.
+<BR>Combine similar errors from all 3 towers, and you can produce 
+a distortion which is (mostly) a plane of arbitrary tilt.
+
+<P>In the XY plane, the effects of an endstop error are mostly a shift:
+<IMG SRC="tiltXYdistort.svg" width="100%">
+The amount of shift varies a little across the plane, but this is secondary to
+the dominate shift.
+
+<H3>Tower Placement Symmetry</H3>
+<P>I worry that my fabrication skills are not professional class.
+If my towers do not map out the perfect vertices of an equilateral triangle,
+I could get distortions like these, if we assume in our motion model that the
+tower placement was perfect:
+<IMG SRC="distortTowerOut.svg">
+<IMG SRC="distortTowerIn.svg">
+
+<P>A tower placement error in one tower produces mostly a scale distortion, in one direction:
+<IMG SRC="towerDisplacementXYdistort.svg" width="100%">
+When two towers are in error, the distortion is dominate rotational about an axis far off the bed:
+<IMG SRC="towerDisplacementXY2distort.svg" width="100%">
+
+
+
+<!-- IMG SRC="../../doc/towerShiftDistortion.svg" -->
+
+<!-- not here? IMG SRC="../../util/probeSpiral.svg" -->
+<!-- IMG SRC="../../util/deltaFit.svg" -->
+
+
+<H2>Marlin Model</H2>
+The model of a deltabot inherent in the Marlin firmware makes several assertions for simplicity.
+<UL>
+<LI>Towers are parallel</LI>
+<LI>Effector moves in a perfect plane perpendicular to the towers</LI>
+<LI>Towers form a perfect equilateral triangle</LI>
+<LI>All rods are exactly the same length</LI>
+</UL>
+The biggest problem of these seems to be the equilateral triangle assertion.
+It will cause some XY distortions.
+RichieC has an experimental calibration procedure which can adjust for tower placement errors.
+As written, I fear that it may suffer from over-fit, since it also automatically adjusts
+things like rod-length, which are hard to measure from bed probes, and are often well measured.
+
+I have not seen anybody address the parallel tower problem.
+(I should simulate it, to see how significant expected errors might be)
+For my next design, I think that the parallel tower problem can (mostly) be solved by
+well built bases with tight tolerance tower connections.
+There may still be a risk of twist, but they should be (mostly) parallel to each other,
+and much of the twist could be calibrated out by with a bed tilt.
+
+<H2>Calibration Procedures</H2>
+
+I have implemented an automated calibration of DELTA_RADIUS, and endstops from bed-scan data.
+It does seem to work, but I have not addressed the tower placement issue yet, and
+this issue has proven to be important.
+
+<P>Tower placement issues can be addressed by a combination of calibration and better fabrication.
+My plans for my next build are to laser-cut plates to place the towers to higher precision.
+It is my hope that this will reduce the tower placement errors.
+
+<P>For the current printer, calibration may be the answer.
+I intend to review RichieC's work, and perhaps try it out.
+I do worry that it is prone to overfit and scale errors since it adjusts both DELTA_RADIUS
+and rod length, the effects of which are hard to discriminate from each other by bed probe data.
+
+<P>For this reason, I propose to hold rod length steady for all bed-probe based calibration
+procedures.
+Once this part of the calibration has convered, I will print test objects.
+The scale of these objects will be measured, and any noted scale error will be evaluated
+to estimate a potential change of rod-length setting.
+<BR>Then bed-probe based calibration will be repeated with the new rod-lenth setting.
+
+<h3>Manual Measurement Procedure</H3>
+
+<H3>Automated Measurement Procedure</h3>
+
+<H3>Tilt and Scale Correction</H3>
+
+<H3>Tilt only Correction</H3>
+
+<h2>Measurement Issues</H3>
+
+Initial stock Marlin bed scan:
+<IMG SRC="probeErrPattern.gif">
+Odd zig-zag pattern to automated probe.
+Still not exactly sure of source.
+Seemed less pronounced on manual probe, wither with switch or FSR.
+Reduced when rebuilt frame <EM>tighter</EM>, but not gone.
+<IMG SRC="probeErrPat2.gif">
+<BR>Still present even when commanding offset on probe, then approaching each
+probe point from same direction.
+
+<P>Data around bed804c.dat looks fairly typical.
+300um range, with zig-zag, initial loose build.
+<BR>bed812d.dat appears to be a more careful manual scan.
+can't say if there is the zig-zag problem.
+<BR>original data from bed812d_orig.dat shows good repeatability of measurements (FSR?)
+
+<BR>bed813c.dat shows zig-zag pattern remains on auto-probe, even when
+each point is probed several times.  Repeated pronbes good. full data at bed813c_full.dat
+
+<P>Repeated probe scan backwards and forwards.
+noting data drift.  bed813d.dat
+<BR>Not sure where this comes from.
+Work around on random probe was to re-home periodically.
+
+<P>bed813f.dat shows repeated zig-zag, no drift when scanning forwards and back.
+813g verifies that results each probe can be repeated and give same number.
+no change to zig-zag.
+
+<P>814d shows accuracy drift under random scan.
+This may have gone away after re-build, but I haven't double checked yet.
+re-home may no longer be necessary.
+
+<P>bed903d.dat after re-build and re-cal.  This may be calibrated, but zig-zag remains
+on ordered scan.
+
+<P>903e back to random ordered scan.  Hard to say if there is zig-zag, 
+but sharp error at tip indicated tower placement issue.
+
+<P>Was not 'scientific' enough to note all experiments, unfortunately.
+Some scans had trick where I approach from same direction every time.
+Was able to repeat zig-zag. odd.
+
+<P>Random order seems to spread whatever that zig-zag error was, and
+produce reliable results.
+
+<P>re-build got rid of drift problem on probes.  Perhaps combined with slowing down probe speed.
+
+<P>bed910a.dat, bd910b.dat, random grid, but repeat each probe 3x to see spread.
+Typical sample spread was 10-25um.
+
+<UL>
+<LI>Backlash</LI>
+<LI>Backlash and drift</LI>
+<LI>FSR comparison</LI>
+<LI>Compensation by randomization</LI>
+<LI>Compensation by randomization and re-homing</LI>
+</UL>
+
+<P>Conclusions
+<BR>DELTA_RADIUS seems to be fairly stable.
+Most of the time, only a tilt/shift correction is necessary.
+Better adjustment parameters can be obtained by searching for the optimal
+solution which alters only those parameters.
+
+<P>Tilt-only calibration recheck can be done in less than 5 minutes, and only
+needs to be repeated every several days, and/or when the printer is moved.
+
+<P>It is my hope that more reliable and robust results will be achieved by
+calibrating the rod-length from XY distortion measurements alone, while
+all other parameters can be calibrated from measurements of Z plane distortion.
+
+<P>TO DO: add tower radius adjustments to bed-scan optimization.
+Check RichieC's code.
+Check state of smoothie... this may be a better candidate firmware.
+
+<P>Try to figure out what tower radius adjustment model really compensates for.
+I wonder if carriage non-center, would make parallelograms not quite right... tipping effector head?  This model seems to assume that all tower carriages are perpendicular to
+line to ideal center.  Most tower mis-alignments will violate this assertion, won't they?
+
+</body></html>

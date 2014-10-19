@@ -1,0 +1,3240 @@
+<?xml version="1.0" encoding="utf-8"  standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="768" height="576" viewBox="0 0 768 576"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<desc>Produced by GNUPLOT 4.4 patchlevel 3 </desc>
+
+<defs>
+
+	<circle id='gpDot' r='0.5' stroke-width='0.5'/>
+	<path id='gpPt0' stroke-width='0.222' stroke='currentColor' d='M-1,0 h2 M0,-1 v2'/>
+	<path id='gpPt1' stroke-width='0.222' stroke='currentColor' d='M-1,-1 L1,1 M1,-1 L-1,1'/>
+	<path id='gpPt2' stroke-width='0.222' stroke='currentColor' d='M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1'/>
+	<rect id='gpPt3' stroke-width='0.222' stroke='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<rect id='gpPt4' stroke-width='0.222' stroke='currentColor' fill='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<circle id='gpPt5' stroke-width='0.222' stroke='currentColor' cx='0' cy='0' r='1'/>
+	<use xlink:href='#gpPt5' id='gpPt6' fill='currentColor' stroke='none'/>
+	<path id='gpPt7' stroke-width='0.222' stroke='currentColor' d='M0,-1.33 L-1.33,0.67 L1.33,0.67 z'/>
+	<use xlink:href='#gpPt7' id='gpPt8' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt7' id='gpPt9' stroke='currentColor' transform='rotate(180)'/>
+	<use xlink:href='#gpPt9' id='gpPt10' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt3' id='gpPt11' stroke='currentColor' transform='rotate(45)'/>
+	<use xlink:href='#gpPt11' id='gpPt12' fill='currentColor' stroke='none'/>
+</defs>
+<g style="fill:none; color:white; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:white; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M162.7,512.7 L632.0,512.7 '></path>
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M162.7,512.7 L175.2,512.7 M632.0,512.7 L619.5,512.7 '></path>
+	<g transform="translate(154.4,517.2)" style="stroke:none; fill:rgb(0,0,0); font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text><tspan>-100</tspan>
+		</text>
+	</g>
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M162.7,395.3 L632.0,395.3 '></path>
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M162.7,395.3 L175.2,395.3 M632.0,395.3 L619.5,395.3 '></path>
+	<g transform="translate(154.4,399.8)" style="stroke:none; fill:rgb(0,0,0); font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text><tspan>-50</tspan>
+		</text>
+	</g>
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M162.7,278.0 L632.0,278.0 '></path>
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M162.7,278.0 L175.2,278.0 M632.0,278.0 L619.5,278.0 '></path>
+	<g transform="translate(154.4,282.5)" style="stroke:none; fill:rgb(0,0,0); font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text><tspan>0</tspan>
+		</text>
+	</g>
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M162.7,160.6 L632.0,160.6 '></path>
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M162.7,160.6 L175.2,160.6 M632.0,160.6 L619.5,160.6 '></path>
+	<g transform="translate(154.4,165.1)" style="stroke:none; fill:rgb(0,0,0); font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text><tspan>50</tspan>
+		</text>
+	</g>
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M162.7,43.3 L632.0,43.3 '></path>
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M162.7,43.3 L175.2,43.3 M632.0,43.3 L619.5,43.3 '></path>
+	<g transform="translate(154.4,47.8)" style="stroke:none; fill:rgb(0,0,0); font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text><tspan>100</tspan>
+		</text>
+	</g>
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M162.7,512.7 L162.7,43.3 '></path>
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M162.7,512.7 L162.7,500.2 M162.7,43.3 L162.7,55.8 '></path>
+	<g transform="translate(162.7,535.2)" style="stroke:none; fill:rgb(0,0,0); font-family:Arial; font-size:12.00pt; text-anchor:middle">
+		<text><tspan>-100</tspan>
+		</text>
+	</g>
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M280.0,512.7 L280.0,43.3 '></path>
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M280.0,512.7 L280.0,500.2 M280.0,43.3 L280.0,55.8 '></path>
+	<g transform="translate(280.0,535.2)" style="stroke:none; fill:rgb(0,0,0); font-family:Arial; font-size:12.00pt; text-anchor:middle">
+		<text><tspan>-50</tspan>
+		</text>
+	</g>
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M397.4,512.7 L397.4,43.3 '></path>
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M397.4,512.7 L397.4,500.2 M397.4,43.3 L397.4,55.8 '></path>
+	<g transform="translate(397.4,535.2)" style="stroke:none; fill:rgb(0,0,0); font-family:Arial; font-size:12.00pt; text-anchor:middle">
+		<text><tspan>0</tspan>
+		</text>
+	</g>
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M514.7,512.7 L514.7,43.3 '></path>
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M514.7,512.7 L514.7,500.2 M514.7,43.3 L514.7,55.8 '></path>
+	<g transform="translate(514.7,535.2)" style="stroke:none; fill:rgb(0,0,0); font-family:Arial; font-size:12.00pt; text-anchor:middle">
+		<text><tspan>50</tspan>
+		</text>
+	</g>
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M632.0,512.7 L632.0,43.3 '></path>
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M632.0,512.7 L632.0,500.2 M632.0,43.3 L632.0,55.8 '></path>
+	<g transform="translate(632.0,535.2)" style="stroke:none; fill:rgb(0,0,0); font-family:Arial; font-size:12.00pt; text-anchor:middle">
+		<text><tspan>100</tspan>
+		</text>
+	</g>
+	<path  d='M162.7,43.3 L162.7,512.7 L632.0,512.7 L632.0,43.3 L162.7,43.3 Z '></path>
+	<g transform="translate(108.4,278.0) rotate(-90)" style="stroke:none; fill:rgb(0,0,0); font-family:Arial; font-size:12.00pt; text-anchor:middle">
+		<text><tspan>Y</tspan>
+		</text>
+	</g>
+	<g transform="translate(397.3,562.2)" style="stroke:none; fill:rgb(0,0,0); font-family:Arial; font-size:12.00pt; text-anchor:middle">
+		<text><tspan>X</tspan>
+		</text>
+	</g>
+	<g transform="translate(397.3,20.8)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:middle">
+		<text><tspan>Radius 1mm long, XY error, scale 10</tspan>
+		</text>
+	</g>
+</g>
+	<a xlink:title="Plot #1">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M186.2,371.9 L205.6,363.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #2">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(186.2,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #3">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M186.2,348.4 L205.9,342.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #4">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(186.2,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #5">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M186.2,324.9 L206.1,320.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #6">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(186.2,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #7">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M186.2,301.5 L206.3,299.4 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #8">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(186.2,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #9">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M186.2,278.0 L206.4,278.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #10">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(186.2,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #11">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M186.2,254.5 L206.4,257.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #12">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(186.2,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #13">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M186.2,231.1 L206.3,235.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #14">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(186.2,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #15">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M186.2,207.6 L206.1,214.4 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #16">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(186.2,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #17">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M186.2,184.1 L205.9,193.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #18">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(186.2,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #19">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M209.6,395.3 L227.1,384.4 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #20">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(209.6,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #21">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M209.6,371.9 L227.5,363.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #22">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(209.6,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #23">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M209.6,348.4 L227.8,341.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #24">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(209.6,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #25">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M209.6,324.9 L228.0,320.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #26">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(209.6,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #27">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M209.6,301.5 L228.1,299.4 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #28">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(209.6,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #29">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M209.6,278.0 L228.2,278.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #30">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(209.6,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #31">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M209.6,254.5 L228.2,257.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #32">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(209.6,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #33">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M209.6,231.1 L228.1,235.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #34">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(209.6,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #35">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M209.6,207.6 L228.0,214.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #36">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(209.6,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #37">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M209.6,184.1 L227.8,193.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #38">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(209.6,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #39">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M209.6,160.6 L227.5,171.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #40">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(209.6,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #41">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M233.1,442.3 L248.1,427.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #42">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(233.1,442.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #43">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M233.1,418.8 L248.5,405.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #44">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(233.1,418.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #45">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M233.1,395.3 L248.8,384.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #46">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(233.1,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #47">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M233.1,371.9 L249.1,362.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #48">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(233.1,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #49">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M233.1,348.4 L249.4,341.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #50">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(233.1,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #51">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M233.1,324.9 L249.6,320.4 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #52">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(233.1,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #53">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M233.1,301.5 L249.7,299.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #54">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(233.1,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #55">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M233.1,278.0 L249.8,278.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #56">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(233.1,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #57">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M233.1,254.5 L249.8,257.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #58">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(233.1,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #59">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M233.1,231.1 L249.8,236.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #60">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(233.1,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #61">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M233.1,207.6 L249.6,214.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #62">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(233.1,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #63">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M233.1,184.1 L249.5,193.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #64">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(233.1,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #65">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M233.1,160.6 L249.2,172.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #66">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(233.1,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #67">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M233.1,137.2 L248.9,150.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #68">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(233.1,137.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #69">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M233.1,113.7 L248.5,128.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #70">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(233.1,113.7) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #71">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M256.6,442.3 L269.7,426.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #72">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(256.6,442.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #73">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M256.6,418.8 L270.1,405.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #74">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(256.6,418.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #75">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M256.6,395.3 L270.4,383.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #76">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(256.6,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #77">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M256.6,371.9 L270.6,362.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #78">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(256.6,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #79">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M256.6,348.4 L270.8,341.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #80">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(256.6,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #81">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M256.6,324.9 L271.0,320.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #82">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(256.6,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #83">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M256.6,301.5 L271.1,299.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #84">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(256.6,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #85">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M256.6,278.0 L271.2,278.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #86">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(256.6,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #87">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M256.6,254.5 L271.2,257.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #88">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(256.6,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #89">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M256.6,231.1 L271.2,236.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #90">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(256.6,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #91">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M256.6,207.6 L271.1,214.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #92">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(256.6,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #93">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M256.6,184.1 L271.0,193.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #94">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(256.6,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #95">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M256.6,160.6 L270.7,172.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #96">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(256.6,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #97">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M256.6,137.2 L270.5,150.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #98">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(256.6,137.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #99">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M256.6,113.7 L270.2,129.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #100">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(256.6,113.7) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #101">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,465.8 L290.9,448.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #102">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,465.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #103">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,442.3 L291.2,426.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #104">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,442.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #105">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,418.8 L291.5,404.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #106">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,418.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #107">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,395.3 L291.8,383.4 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #108">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #109">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,371.9 L292.0,362.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #110">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #111">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,348.4 L292.2,341.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #112">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #113">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,324.9 L292.3,320.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #114">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #115">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,301.5 L292.4,299.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #116">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #117">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,278.0 L292.5,278.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #118">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #119">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,254.5 L292.5,257.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #120">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #121">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,231.1 L292.4,236.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #122">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #123">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,207.6 L292.4,215.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #124">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #125">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,184.1 L292.3,193.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #126">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #127">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,160.6 L292.1,172.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #128">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #129">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,137.2 L291.9,151.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #130">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,137.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #131">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,113.7 L291.6,129.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #132">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,113.7) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #133">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M280.0,90.2 L291.3,107.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #134">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(280.0,90.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #135">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,489.2 L312.0,469.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #136">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,489.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #137">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,465.8 L312.3,447.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #138">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,465.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #139">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,442.3 L312.6,426.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #140">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,442.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #141">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,418.8 L312.8,404.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #142">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,418.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #143">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,395.3 L313.0,383.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #144">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #145">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,371.9 L313.2,362.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #146">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #147">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,348.4 L313.3,341.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #148">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #149">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,324.9 L313.5,320.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #150">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #151">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,301.5 L313.5,299.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #152">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #153">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,278.0 L313.6,278.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #154">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #155">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,254.5 L313.6,257.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #156">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #157">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,231.1 L313.6,236.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #158">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #159">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,207.6 L313.5,215.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #160">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #161">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,184.1 L313.4,193.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #162">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #163">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,160.6 L313.3,172.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #164">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #165">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,137.2 L313.1,151.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #166">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,137.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #167">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,113.7 L312.9,129.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #168">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,113.7) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #169">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,90.2 L312.7,108.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #170">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,90.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #171">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M303.5,66.8 L312.4,86.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #172">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(303.5,66.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #173">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,489.2 L333.4,469.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #174">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,489.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #175">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,465.8 L333.7,447.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #176">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,465.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #177">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,442.3 L333.8,425.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #178">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,442.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #179">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,418.8 L334.0,404.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #180">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,418.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #181">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,395.3 L334.2,383.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #182">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #183">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,371.9 L334.3,361.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #184">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #185">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,348.4 L334.4,340.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #186">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #187">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,324.9 L334.5,319.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #188">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #189">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,301.5 L334.6,299.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #190">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #191">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,278.0 L334.6,278.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #192">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #193">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,254.5 L334.6,257.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #194">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #195">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,231.1 L334.6,236.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #196">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #197">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,207.6 L334.6,215.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #198">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #199">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,184.1 L334.5,194.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #200">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #201">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,160.6 L334.4,172.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #202">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #203">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,137.2 L334.3,151.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #204">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,137.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #205">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,113.7 L334.1,130.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #206">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,113.7) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #207">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,90.2 L333.9,108.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #208">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,90.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #209">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M327.0,66.8 L333.7,86.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #210">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(327.0,66.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #211">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,489.2 L354.8,469.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #212">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,489.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #213">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,465.8 L354.9,447.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #214">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,465.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #215">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,442.3 L355.1,425.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #216">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,442.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #217">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,418.8 L355.2,404.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #218">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,418.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #219">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,395.3 L355.3,382.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #220">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #221">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,371.9 L355.4,361.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #222">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #223">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,348.4 L355.4,340.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #224">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #225">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,324.9 L355.5,319.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #226">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #227">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,301.5 L355.5,298.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #228">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #229">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,278.0 L355.6,278.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #230">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #231">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,254.5 L355.6,257.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #232">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #233">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,231.1 L355.6,236.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #234">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #235">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,207.6 L355.5,215.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #236">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #237">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,184.1 L355.5,194.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #238">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #239">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,160.6 L355.4,172.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #240">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #241">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,137.2 L355.4,151.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #242">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,137.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #243">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,113.7 L355.3,130.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #244">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,113.7) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #245">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,90.2 L355.1,108.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #246">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,90.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #247">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M350.4,66.8 L355.0,86.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #248">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(350.4,66.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #249">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,489.2 L376.1,468.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #250">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,489.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #251">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,465.8 L376.1,447.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #252">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,465.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #253">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,442.3 L376.2,425.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #254">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,442.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #255">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,418.8 L376.3,404.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #256">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,418.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #257">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,395.3 L376.3,382.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #258">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #259">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,371.9 L376.4,361.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #260">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #261">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,348.4 L376.4,340.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #262">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #263">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,324.9 L376.4,319.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #264">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #265">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,301.5 L376.5,298.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #266">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #267">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,278.0 L376.5,278.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #268">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #269">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,254.5 L376.5,257.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #270">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #271">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,231.1 L376.5,236.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #272">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #273">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,207.6 L376.5,215.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #274">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #275">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,184.1 L376.4,194.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #276">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #277">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,160.6 L376.4,173.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #278">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #279">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,137.2 L376.4,151.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #280">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,137.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #281">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,113.7 L376.3,130.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #282">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,113.7) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #283">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,90.2 L376.3,108.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #284">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,90.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #285">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M373.9,66.8 L376.2,86.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #286">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(373.9,66.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #287">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,489.2 L397.4,468.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #288">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,489.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #289">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,465.8 L397.3,447.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #290">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,465.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #291">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,442.3 L397.3,425.4 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #292">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,442.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #293">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,418.8 L397.3,404.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #294">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,418.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #295">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,395.3 L397.3,382.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #296">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #297">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,371.9 L397.3,361.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #298">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #299">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,348.4 L397.3,340.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #300">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #301">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,324.9 L397.4,319.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #302">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #303">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,301.5 L397.3,298.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #304">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #305">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,278.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #306">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #307">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,254.5 L397.4,257.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #308">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #309">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,231.1 L397.4,236.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #310">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #311">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,207.6 L397.4,215.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #312">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #313">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,184.1 L397.4,194.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #314">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #315">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,160.6 L397.4,173.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #316">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #317">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,137.2 L397.3,151.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #318">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,137.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #319">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,113.7 L397.4,130.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #320">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,113.7) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #321">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,90.2 L397.3,108.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #322">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,90.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #323">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M397.4,66.8 L397.3,86.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #324">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(397.4,66.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #325">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,489.2 L418.6,468.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #326">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,489.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #327">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,465.8 L418.6,447.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #328">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,465.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #329">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,442.3 L418.5,425.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #330">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,442.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #331">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,418.8 L418.4,404.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #332">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,418.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #333">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,395.3 L418.4,382.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #334">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #335">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,371.9 L418.3,361.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #336">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #337">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,348.4 L418.3,340.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #338">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #339">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,324.9 L418.3,319.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #340">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #341">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,301.5 L418.2,298.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #342">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #343">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,278.0 L418.2,278.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #344">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #345">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,254.5 L418.2,257.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #346">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #347">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,231.1 L418.2,236.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #348">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #349">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,207.6 L418.2,215.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #350">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #351">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,184.1 L418.3,194.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #352">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #353">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,160.6 L418.3,173.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #354">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #355">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,137.2 L418.3,151.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #356">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,137.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #357">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,113.7 L418.4,130.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #358">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,113.7) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #359">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,90.2 L418.4,108.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #360">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,90.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #361">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M420.8,66.8 L418.5,86.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #362">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(420.8,66.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #363">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,489.2 L439.9,469.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #364">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,489.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #365">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,465.8 L439.8,447.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #366">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,465.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #367">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,442.3 L439.6,425.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #368">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,442.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #369">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,418.8 L439.5,404.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #370">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,418.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #371">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,395.3 L439.4,382.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #372">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #373">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,371.9 L439.3,361.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #374">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #375">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,348.4 L439.3,340.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #376">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #377">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,324.9 L439.2,319.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #378">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #379">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,301.5 L439.2,298.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #380">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #381">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,278.0 L439.1,278.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #382">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #383">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,254.5 L439.1,257.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #384">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #385">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,231.1 L439.1,236.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #386">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #387">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,207.6 L439.2,215.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #388">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #389">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,184.1 L439.2,194.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #390">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #391">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,160.6 L439.3,172.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #392">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #393">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,137.2 L439.3,151.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #394">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,137.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #395">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,113.7 L439.4,130.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #396">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,113.7) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #397">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,90.2 L439.6,108.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #398">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,90.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #399">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M444.3,66.8 L439.7,86.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #400">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(444.3,66.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #401">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,489.2 L461.3,469.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #402">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,489.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #403">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,465.8 L461.0,447.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #404">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,465.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #405">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,442.3 L460.9,425.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #406">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,442.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #407">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,418.8 L460.7,404.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #408">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,418.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #409">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,395.3 L460.5,383.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #410">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #411">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,371.9 L460.4,361.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #412">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #413">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,348.4 L460.3,340.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #414">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #415">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,324.9 L460.2,319.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #416">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #417">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,301.5 L460.1,299.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #418">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #419">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,278.0 L460.1,278.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #420">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #421">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,254.5 L460.1,257.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #422">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #423">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,231.1 L460.1,236.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #424">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #425">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,207.6 L460.1,215.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #426">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #427">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,184.1 L460.2,194.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #428">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #429">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,160.6 L460.3,172.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #430">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #431">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,137.2 L460.4,151.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #432">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,137.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #433">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,113.7 L460.6,130.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #434">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,113.7) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #435">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,90.2 L460.8,108.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #436">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,90.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #437">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M467.7,66.8 L461.0,86.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #438">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(467.7,66.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #439">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,489.2 L482.7,469.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #440">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,489.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #441">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,465.8 L482.4,447.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #442">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,465.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #443">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,442.3 L482.1,426.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #444">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,442.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #445">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,418.8 L481.9,404.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #446">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,418.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #447">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,395.3 L481.7,383.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #448">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #449">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,371.9 L481.5,362.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #450">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #451">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,348.4 L481.4,341.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #452">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #453">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,324.9 L481.2,320.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #454">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #455">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,301.5 L481.2,299.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #456">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #457">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,278.0 L481.1,278.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #458">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #459">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,254.5 L481.1,257.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #460">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #461">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,231.1 L481.1,236.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #462">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #463">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,207.6 L481.2,215.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #464">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #465">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,184.1 L481.3,193.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #466">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #467">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,160.6 L481.4,172.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #468">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #469">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,137.2 L481.6,151.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #470">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,137.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #471">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,113.7 L481.8,129.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #472">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,113.7) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #473">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,90.2 L482.0,108.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #474">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,90.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #475">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M491.2,66.8 L482.3,86.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #476">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(491.2,66.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #477">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,465.8 L503.8,448.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #478">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,465.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #479">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,442.3 L503.5,426.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #480">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,442.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #481">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,418.8 L503.2,404.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #482">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,418.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #483">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,395.3 L502.9,383.4 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #484">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #485">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,371.9 L502.7,362.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #486">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #487">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,348.4 L502.5,341.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #488">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #489">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,324.9 L502.4,320.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #490">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #491">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,301.5 L502.3,299.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #492">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #493">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,278.0 L502.2,278.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #494">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #495">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,254.5 L502.2,257.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #496">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #497">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,231.1 L502.3,236.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #498">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #499">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,207.6 L502.3,215.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #500">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #501">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,184.1 L502.4,193.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #502">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #503">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,160.6 L502.6,172.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #504">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #505">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,137.2 L502.8,151.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #506">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,137.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #507">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,113.7 L503.1,129.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #508">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,113.7) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #509">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M514.7,90.2 L503.4,107.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #510">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(514.7,90.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #511">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M538.1,442.3 L525.0,426.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #512">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(538.1,442.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #513">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M538.1,418.8 L524.6,405.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #514">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(538.1,418.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #515">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M538.1,395.3 L524.3,383.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #516">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(538.1,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #517">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M538.1,371.9 L524.1,362.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #518">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(538.1,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #519">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M538.1,348.4 L523.9,341.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #520">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(538.1,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #521">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M538.1,324.9 L523.7,320.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #522">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(538.1,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #523">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M538.1,301.5 L523.6,299.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #524">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(538.1,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #525">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M538.1,278.0 L523.5,278.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #526">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(538.1,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #527">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M538.1,254.5 L523.5,257.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #528">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(538.1,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #529">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M538.1,231.1 L523.5,236.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #530">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(538.1,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #531">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M538.1,207.6 L523.6,214.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #532">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(538.1,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #533">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M538.1,184.1 L523.7,193.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #534">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(538.1,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #535">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M538.1,160.6 L524.0,172.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #536">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(538.1,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #537">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M538.1,137.2 L524.2,150.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #538">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(538.1,137.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #539">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M538.1,113.7 L524.5,129.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #540">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(538.1,113.7) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #541">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M561.6,442.3 L546.6,427.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #542">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(561.6,442.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #543">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M561.6,418.8 L546.2,405.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #544">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(561.6,418.8) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #545">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M561.6,395.3 L545.9,384.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #546">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(561.6,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #547">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M561.6,371.9 L545.6,362.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #548">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(561.6,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #549">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M561.6,348.4 L545.3,341.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #550">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(561.6,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #551">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M561.6,324.9 L545.1,320.4 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #552">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(561.6,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #553">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M561.6,301.5 L545.0,299.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #554">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(561.6,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #555">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M561.6,278.0 L544.9,278.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #556">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(561.6,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #557">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M561.6,254.5 L544.9,257.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #558">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(561.6,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #559">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M561.6,231.1 L544.9,235.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #560">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(561.6,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #561">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M561.6,207.6 L545.1,214.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #562">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(561.6,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #563">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M561.6,184.1 L545.2,193.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #564">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(561.6,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #565">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M561.6,160.6 L545.5,172.1 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #566">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(561.6,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #567">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M561.6,137.2 L545.8,150.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #568">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(561.6,137.2) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #569">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M561.6,113.7 L546.2,128.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #570">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(561.6,113.7) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #571">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M585.1,395.3 L567.6,384.4 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #572">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(585.1,395.3) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #573">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M585.1,371.9 L567.2,363.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #574">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(585.1,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #575">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M585.1,348.4 L566.9,341.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #576">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(585.1,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #577">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M585.1,324.9 L566.7,320.5 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #578">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(585.1,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #579">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M585.1,301.5 L566.6,299.4 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #580">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(585.1,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #581">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M585.1,278.0 L566.5,278.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #582">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(585.1,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #583">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M585.1,254.5 L566.5,257.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #584">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(585.1,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #585">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M585.1,231.1 L566.6,235.9 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #586">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(585.1,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #587">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M585.1,207.6 L566.7,214.6 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #588">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(585.1,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #589">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M585.1,184.1 L566.9,193.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #590">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(585.1,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #591">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M585.1,160.6 L567.2,171.8 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #592">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(585.1,160.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #593">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M608.5,371.9 L589.1,363.3 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #594">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(608.5,371.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #595">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M608.5,348.4 L588.8,342.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #596">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(608.5,348.4) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #597">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M608.5,324.9 L588.6,320.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #598">
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(608.5,324.9) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #599">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M608.5,301.5 L588.4,299.4 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #600">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(608.5,301.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #601">
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M608.5,278.0 L588.3,278.2 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #602">
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(608.5,278.0) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #603">
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M608.5,254.5 L588.3,257.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #604">
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(608.5,254.5) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #605">
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M608.5,231.1 L588.4,235.7 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #606">
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(608.5,231.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #607">
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M608.5,207.6 L588.6,214.4 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #608">
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(608.5,207.6) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+	<a xlink:title="Plot #609">
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0, 255)'  d='M608.5,184.1 L588.8,193.0 '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #610">
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<use xlink:href='#gpPt5' transform='translate(608.5,184.1) scale(1.50)' color='rgb(255,   0,   0)'/>
+</g>
+	</a>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+</svg>
+
