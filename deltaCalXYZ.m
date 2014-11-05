@@ -40,7 +40,7 @@ if (nargin > 6)
    % show update commands
    DP.est.endstops = oldEndstops + towerZErr;
    DP.est.cmd = sprintf('M666 X%.3f Y%.3f Z%.3f  A%.3f B%.3f C%.3f  D%.3f',...
-	   DP.est.endstops, DP.est.radius, DP.est.RodLen)
+	 DP.est.endstops, DP.est.radius, DP.est.RodLen);
 end
 DP.est
 end

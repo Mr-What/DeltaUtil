@@ -3,7 +3,9 @@
 % but generalized
 
 function [fit,nEval,status,err] = SimplexMinimize(fcn,...
-       initialGuess,initialStep,smallBox,maxIter)
+      initialGuess,initialStep,smallBox,maxIter,errEps)
+if (nargin < 5), maxIter = 1000; end
+if (nargin < 6), errEps  = .001; end
 
 status = 0;  % Normal completion
 nDim = prod(size(initialGuess));
@@ -43,7 +45,7 @@ while(1)
     [ilo,ihi,inhi] = getExtremaIndices([simplex.y]);
 
     % check exit condition(s)
-    if (SimplexExitCriteriaMet(simplex,smallBox,nEval-lastNewLow) || (nEval > maxIter))
+    if (SimplexExitCriteriaMet(simplex,smallBox,nEval-lastNewLow,errEps) || (nEval > maxIter))
 	    fit = simplex(ilo).p;
         err = simplex(ilo).y;
         if (nEval > maxIter)
