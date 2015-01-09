@@ -18,7 +18,7 @@
 % XOR   radius(3) -- independant radii
 %       RodLen   -- length between center of pivots on diagonal rods
 %
-% RETURN:  values to SUBTRACT from tower offset(M666 X Y Z)
+% RETURN:  values to ADD to tower offset(M666 X Y Z)
 %          settings to level print bed
 function towerErr = guessDeltaEndstopErr(DP,meas)
 
@@ -37,7 +37,7 @@ GuessParams.verbose = 0;
 [dErr,nEval,status,err] = SimplexMinimize(...
               @(p) deltaGuessEndstopErr(p,GuessParams),...
    	      [0 0 0], 0.1+[0 0 0], 0.005+[0 0 0], 300)
-towerErr =-dErr;
+towerErr = dErr;
 
 % plot delta parameter fit
 errZ = deltaEndstopErrZ(dErr,GuessParams);
@@ -67,7 +67,7 @@ hold off
 
 end
 
-% Error metric for minimization
+%-- ============================================ Error metric for minimization
 function err = deltaGuessEndstopErr(p,DP)
 err = deltaEndstopErrZ(p,DP);
 err = mean(err .* err);
@@ -80,9 +80,9 @@ err = 0;
 n = size(DP.meas,1);
 errZ = zeros(n,1);
 for i=1:n
-  d0 = cart2delta(DP,DP.meas(i,1),DP.meas(i,2),0);
+  d0 = cart2delta(DP,[DP.meas(i,1),DP.meas(i,2),0]);
   de = d0 + p;  % delta positions with position offset error
-  dz = delta2cart(DP,de(1),de(2),de(3));
+  dz = delta2cart(DP,de);
   errZ(i) = dz(3) - DP.meas(i,3);
 end
 end
