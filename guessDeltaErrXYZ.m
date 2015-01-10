@@ -51,17 +51,20 @@ pause(0.1); % forces plot to display, so we can review it while computing
 %seed = [0,0,0,DP.radius-109.5,DP.RodLen-217.95,.1];
 
 step = [1 1 1  1 1 1  1 0.3]*0.1; % initial step
-randStep = step/4;  % *2
-%seed = [0 0 0  0 0 0  0  .1];
+randStep = step*4;%/4;  % *2
+seed = [0 0 0  0 0 0  0  .1];
 % hack to try and double check a good-looking minima
-seed = [-.27 .16 .06  1.4 -1.4 -.5 -.1 .1];
+%seed = [-.27 .16 .06  1.4 -1.4 -.5 -.1 .1];
+%seed = [0 0 0   1 -1 .3   0 .1];
 seed = seed + (rand(1,8)+rand(1,8)-1) .* randStep;  % randomize seed to test convergence
 [dErr,nEval,status,err] = SimplexMinimize(...
-      @(p) deltaGuessErrXYZ(p,DP),seed,step,step/20,999)
+      @(p) deltaGuessErrXYZ(p,DP),seed,step,step/10,1000,.01);
 towerZErr = dErr(1:3);
 radiusErr = dErr(4:6);
 diagErr   = dErr(7);
 spread    = dErr(8);
+
+disp(sprintf('%d evaluations',nEval));
 
 % plot delta parameter fit
 errZ = deltaErrZ(dErr,DP);

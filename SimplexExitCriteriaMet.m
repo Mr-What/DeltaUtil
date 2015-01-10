@@ -1,6 +1,6 @@
 % Return true if exit criteria met
 
-function a = SimplexExitCriteriaMet(simplex,smallBox,nEvalSinceNewLow)
+function a = SimplexExitCriteriaMet(simplex,smallBox,nEvalSinceNewLow,errEps)
 
 % exit when simplex can be bound within a smallBox, and
 % it has been several evaluations since we found a better low
@@ -24,7 +24,7 @@ simplex(:).p
 simplex(:).y
    return
 end
-if ((hiErr-loErr)/loErr < 0.001)
+if ((hiErr-loErr)/loErr < errEps)
     a=1;
     disp('error pretty flat across simplex');
     return;

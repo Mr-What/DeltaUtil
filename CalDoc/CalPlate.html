@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<TITLE>Calibration plate for Deltabots</TITLE>
+</head>
+<H1 center>Calibration of Delta 3D Printers using a calibration plate</H1>
+
+<BODY STYLE="font-family: Arial, Helvetica">
+
+One issue with the calibration of deltabots is that while it is relatively
+easy to probe bed level, it is difficult to determine an accurate XY position.
+If a linear-delta printer is built perfectly, with absolutely parallel towers,
+absolutely perpendicular to the bed, with perfect arms and end effector linkages,
+this is not a problem.  However, in the real world, there are always
+construction imperfections.
+These imperfections can cause distortions in the XY plane.
+It can sometimes be better to have calibrated parameters which sacrifice
+bed flatness for low distortion (higher accuracy) in the XY plane.
+The residual bed-flatness error can be removed by an automatic
+bed-leveling procedure (a.k.a. bed tram compensation).
+
+<P>See my earlier
+<A HREF="Calibration.html">musings on calibration</A>
+for a more in-depth discussion.
+
+<P>I had earlier proposed a technique which uses numerous measurements
+on a calibration print in the calibration procedure to reduce XY distortions.
+While this technique does work, it is limited by errors in measurement,
+printing, and part warpage when the plastic cools.
+It also assumes that the print spread is anisoplanatic, where on most printers
+it is not.
+I know that my blower is not completely uniform, and spread around the nozzle
+is not uniform.
+
+<P>
+<IMG SRC="http://boim.com/img/mountedNeedleProbe.jpg" width="20%" align="left">
+<IMG SRC="http://boim.com/img/needleProbe.jpg" width="20%" align="right">
+What if we fitted the printer with a CNC probe needle sensor,
+and searched probes of a precision machined plate mounted on top of the print
+bed like this one.
+We could perform interactive bed probes, searching for the
+bottom of the calibration holes.
+This would give us printer settings at known, complete 3D XYZ positions
+to feed into a calibration parameter optimization.
+<IMG SRC="http://boim.com/img/calPlate.png" width="30%" align="right">
+
+<HR>
+Another way to accomplish this would be to create a flat calibration target
+with little fiducials, most likely + symbols, which can be attached to the printbed.
+A small camera, with macro focus, could be mounted to the end-effector, and used
+to track the fiducials for known XY positions.
+A traditional bed probe, also attached to the end-effector, could be used
+to estimate bed levels, albeit at an offset from the camera points.
+
+</body></html>
