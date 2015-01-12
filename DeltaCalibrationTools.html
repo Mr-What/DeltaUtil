@@ -1,29 +1,42 @@
 <!DOCTYPE html PUBLIC "-//IETF//DTD HTML//EN">
-<!-- saved from url=(0053)http://boim.com/MarlinUtil/DeltaCalibrationTools.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Delta Calibration Tools</title>
   </head>
-<body style="font-family: Arial, Helvetica">
+  <body style="font-family: Arial, Helvetica">
+    <H6 align=right>150111</H6>
+    <H1>Linear Delta 3D Printer Calibration Tools</H1>
 These are some tools to compute calibration adjustments
 for a delta-style 3D printer using the Marlin firmware.
 
-<p>Adjustments are computed only for the DELTA_RADIUS firmware setting,
-and the endstop offsets, as are set by the M666 command.
-It is assumed that all towers are equally spaced around the <em>center</em>,
-and that the length of the delta rods was carefully measured, and set
-properly in the DELTA_DIAGONAL_ROD macro of Configuration.h.
+<p>Adjustments are computed for the DELTA_RADIUS and DELTA_DIAGONAL_ROD firmware setting,
+  and the endstop offsets, as are set by the M666 command in Johann's fork of Marlin.
+  In both the RichieC and Mr-What forks of Marlin there are commands to save all
+  parameters in EEPROM.
+  For the Mr-What fork, the command is like : <PRE>
+    M666 X-8.43 Y-8.81 Z-8.57  A110 B110 C110  D217.9
+  </PRE>
+  Where -8.43, -8.81 and -8.57 are the endstop offsets for the X, Y and Z towers respectively.
+  Here, the DELTA_RADIUS is assumed to be the same for all towers, and is set to 110 for each of them.
+  This is a good assumption to start with.
+  Calibration procedures will be presented which can set these three values independently.
+  The D parameter is the diagonal rod length.
+  This is the length from pivot center to pivot center, and should be measured very
+  carefully with calipers if available.
+  This is one of the few parameters which is easy to estimate with high precision
+  from a caliper measurement.
+</p>
 
-</p><p>Most people will want to use the auto bed-leveling probe function
-to take levels of the bed height.
-If you use pronterface to command the auto-level probe, it will
+    <p>Users of Johann's fork of Marlin may want to use the auto bed-leveling probe function
+to measure levels of the bed height.
+If you use pronterface <TT>G29</TT> command the auto-level probe, it will
 print information like this back to the console:</p><pre>   ...
-   Bed x: 40.00 y: -60.00 z: 5.24
-   Bed x: 20.00 y: -60.00 z: 5.07
-   ...
-   Bed x: -20.00 y: 60.00 z: 5.33
-   Bed x: -40.00 y: 60.00 z: 5.25
-   -0.51 0.07 -0.00 -0.10 -0.13 0.04 0.21
-   ...
+      Bed x: 40.00 y: -60.00 z: 5.24
+      Bed x: 20.00 y: -60.00 z: 5.07
+      ...
+      Bed x: -20.00 y: 60.00 z: 5.33
+      Bed x: -40.00 y: 60.00 z: 5.25
+      -0.51 0.07 -0.00 -0.10 -0.13 0.04 0.21
+      ...
 </pre>
 
 <P>If you have implemented a G30 command that does a single bed height probe,
@@ -31,18 +44,10 @@ and no other actions, you can use a gcode script to perform a bed-probe
 at arbitrary resolution.
 <A HREF="http://boim.com/DeltaUtil/bedProbeRandGrid.pl">
 This script</A>
-probes about 81 points, 3 times each, in random order to try
+probes around 100 points, 3 times each, in random order to try
 and average out any backlash effects.
 Parameters can be edited to fit your printbed.
-If you use this script, with a tripple check on every probe point,
-you can average these values with this octave command:<PRE>
-     bed = sampleMeans(bed);
-</PRE>
-It may be a good idea to plot your bed probes:<PRE>
-     plot3(bed(:,1),bed(:,2),bed(:,3),'.');grid on
-</PRE>
-and verify that repeated readings of each probe point are within
-acceptable tolerance.
+</P>
 
 <P>In a terminal window, run the follwing command:<pre>   perl extractProbeData.pl &gt; myBed.dat
 </pre>
@@ -50,7 +55,8 @@ It will wait for input.
 <br>Copy all of the <tt>Bed...</tt> lines from pronterface, and paste
 them into the window running the <tt>extractProbeData.pl</tt> script,
 then press &lt;CR&gt;ctrl-D, and the script should terminate.
-<p>When complete, the script should have produced a myBed.dat file that has contents like:</p><pre>     40.00 -60.00 4.53
+<p>When complete, the script should have produced a myBed.dat file that has contents like:</p><pre>'
+     40.00 -60.00 4.53
      20.00 -60.00 4.48
      0.00 -60.00 4.63
      -20.00 -60.00 4.84
@@ -97,12 +103,48 @@ then press &lt;CR&gt;ctrl-D, and the script should terminate.
      -40.00 60.00 5.44
 </pre>
 
-<p>If you do not have a bed leveling probe, you can manually check the
+<P><img src="bedProbe3.svg" width="40%" align="right">
+  This data can be loaded into octave (or MATLAB) with a command like:<PRE>
+     bed = load('myBed.dat');
+</PRE>
+    It may be a good idea to plot your bed probes:<PRE>
+     plot3(bed(:,1),bed(:,2),bed(:,3),'+');grid on
+</PRE>
+and verify that repeated readings of each probe point are within
+acceptable tolerance.
+</P>
+<P>If you use the randomized probe script, with a tripple check on every probe point,
+you can average these values with this command:<PRE>
+     bed = sampleMeans(bed);
+</PRE>
+  and then overlay the mean points with a plotting command like:<PRE>
+     hold on;plot3(bed(:,1),bed(:,2),bed(:,3),'.r');hold off
+</PRE>
+  Verify than any spread of repeated probes is within acceptable tolerance.
+  If your readings are not repeatable, it may be an indicator of backlash problems
+  in the hardware, or a software error.
+  Be sure that any bed-level compensation is turned off for these probes.
+  On Johann's fork, the homing command, <TT>G28</TT> should do this.
+  For the Mr-What fork, issue the command <TT>M668</TT> without parameters to
+  clear the bed-level compensation polynomial.
+</P>
+
+<P>You will want to know the vertical offset from your bed probe
+  to the nozzle tip.
+  I recommend homing, <TT>G28</TT> then lowering the nozzle until it barely
+  catches a piece of paper on the printbed.
+  Note the Z ordinate of this position with the <TT>M114</TT> g-code command.
+  Repeat this procedure with the bed probe installed and the <TT>G30</TT> command.
+  Note the difference in the reported Z ordinate.
+  This is your probe Z offset.
+  </P>
+
+    <p>If you do not have a bed leveling probe, you can manually check the
 nozzle height over the bed, and note the position with the M114 command.
-I have a similar script to create a data file like the one above from M114
+      I have a similar script to <TT>extractProbeData.pl</TT> which will
+      create a data file like the one above from M114
 output called <tt>extractM114.pl</tt>.
-I have used this by sliding a microscope slide under the nozzle to find
-how low I can go before I touch the slide.
+</p>
 
 </p><h3>Data Analysis in Octave (or MATLAB)</h3>
  
@@ -112,17 +154,15 @@ start up an <tt>octave</tt> session.</p><pre>   octave
 Load the data with a command like:<pre>   bed = load('myBed.dat');
 </pre>
 You may wish to remove the Z axis bias.
-I measured this by hand on my printer using the microscope slide technique,
-and placed the setting in the Z_PROBE_OFFSET_FROM_EXTRUDER macro.
-In my case, this distance is 5.2mm, so I correct my bed probe data
-with a command like:<pre>   bed(:,3) = bed(:,3) - 5.2;
+In my case, this distance is 12.1mm, so I correct my bed probe data
+with a command like:<pre>   bed(:,3) = bed(:,3) - 12.1;
 </pre>
-If I were correcting manually taken data, with the microscope slide,
-the number would be 1.17.
+
 
 <P>I have been concerned about a probe with XY offsets from the nozzle,
 so I currently use a probe which mounts directly under the nozzle,
-and have no XY ofset (but my bed(:,3) offset is 11.45 for the larger probe).
+  and have no XY ofset (but my bed(:,3) offset is 12.1 for the larger probe,
+  the offset for a typical Kossel-Mini probe is around 2mm).
 We are not just measuring bed levels, but placement of the end-effector.
 I worry that those XY offsets could be more complicated than our simplified
 delta model allows.
@@ -145,31 +185,87 @@ be able to see the progress messages unless you disable the Octave
 output pager:</p><pre>   more off
 </pre>
 
-<p>Now you are ready to guess the calibration errors for the DELTA_RADIUS
-setting, and the endstop offsets:</p>
-<pre>   [deltaErr,towerErr]=guessDeltaErr4(DP,bed)
-</pre>
+<H3>Tilt-only correction</H3>
+<img src="tiltedBed.png" width="40%" align="right">
+    <P>
+      On your first scan, the endstop offsets are likely to have a large error,
+      producing a significant tilt, like the one shown on the right.
+      <P><FONT size=-1>For this plot, I did not use the <TT>plot3</TT> technique
+	cited above.  I prefer plot3, but they do not show well on the printed page.
+	for these color-elevation plots, I use commands like:<PRE>
+	  x = [-100:5:100];
+	  xx = ones(41,1) * x;
+	  z = griddata(a(:,1),a(:,2),a(:,3),xx,xx');
+          imagesc(x,x,z);colorbar;axis image
+</PRE></FONT>
+      If this is the case, it is a good idea to get the endstop offsets close to
+	the correct value before performing a more detailed calibration.<PRE>
+    te = guessDeltaEndstopErr(DP,bed)
+</PRE>
+will produce endstop adjustment estimates.
+Add these values to your M666 X Y Z settings to obtain a (nearly) flat bed scan.
 
-This will produce a plot of the bed probe values, with a quadratic
-fit surface, a plot of the best-fit distorted surface that fits your bed probes, with a quadratic fit to these points, and finally a simple plot showing
-all of your measurements, along with the distorted bed best-fit to those measurements.
+	<P>Re-scan the bed after refining the endstop offsets.
+<H3>Constant DELTA_RADIUS estimation</H3>
+
+	
+<p>Now you are ready to guess the calibration errors for the DELTA_RADIUS
+setting, and the endstop offsets together:</p>
+<pre>   [de,te]=guessDeltaErr4(DP,bed)
+</pre>
+This should add a correction for any bowl/dome type error you see in the bed scan.
+(make a plot of this, and include here)
+
+    <P>Add the <TT>te</TT> values to your endstop offsets, as described in the previous section,
+      and add the <TT>de</TT> value to your DELTA_RADIUS.
+      e.g. Set DELTA_RADIUS in Johann's <TT>Configuration.h</TT> or use a command like<PRE>
+     M666 X-8.43 Y-8.27 Z-8.54  A109.8 B109.8 C109.8
+</PRE> on Mr-What's Marlin fork.
+      
+<P>This procedure produce several diagnostic plots.</P>
 
 <p>To update your calibration, add the towerErr value to your
 endstop offsets (M666 setting), and add the deltaErr value
-to your DELTA_RADIUS setting.
+to your DELTA_RADIUS setting.</p>
 
 </p><p>I prefer to get the surface fairly flat before I really trust the
-deltaErr value and apply it.
+deltaErr value and apply it, as suggested above.</p>
 
+<H3>Individual DELTA_RADIUS estimation</H3>
+<IMG SRC="potatoChipBed.png" width="40%" align="right">
+Make a new scan of your bed, using your best estimate of printer parameters and load it.
+
+<P>After your initial DELTA_RADIUS, bowl/dome, compensation you may be left
+with a bed scan which is rather potato-chip shaped.
+Not exactly tilted, not exactly a dome.
+Setting a unique DELTA_RADIUS for each tower can help reduce this distortion.
+Make sure that your <TT>DP</TT> structure contains the settings for DELTA_RADIUS
+used to produce your bed scan data<PRE>
+     DP.radius=[109.8 109.8 109.8]
+</PRE>
+We can estimate these unique delta radii with the command:<PRE>
+     [re,te]=guessDeltaErr6(DP,bed)
+</PRE>
+</P>
+<P>As above, the <TT>te</TT> values can be added to your endstop offsets.
+  The new delta radius estimate, <TT>re</TT>, values can be set with the
+  <TT>M666</TT> command on the Mr-What fork.
+  On Johann's fork, you will need to alter <TT>Configuration.h</TT> to have
+  three DELTA_RADIUS settings, and use them as appropriate when computing
+  the locations for tower 1, 2, and 3.</P>
+  
 <HR>
-<IMG width="20%" align="left" SRC="http://boim.com/DeltaUtil/deltaTestA.png">
+<H2>Full Calibration</H2>
+<IMG width="25%" align="left" SRC="flatBed.png">
+
 Once you have the basic bed calibration close enough to print, from the
 above procedure you can continue to the full calibration procedure.
 
 <P>Clear any auto-bed-leveling (tram) adjustments, and perform a
 thorough bed level probe, saving the data.
 Do bed-leveling (tram) adjustments as necessary to be able to print.
-Then print the
+  Then print the
+<IMG width="20%" align="right" SRC="deltaTestA.png">
 <A HREF="http://boim.com/DeltaUtil/deltaTestA.scad">
 calibration object</A>.
 

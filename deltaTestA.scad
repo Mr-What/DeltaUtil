@@ -58,3 +58,4 @@ union() {
 }
 
 %translate([0,0,-1]) rotate([0,0,30]) cylinder(h=2,r=70,$fn=6);
+//translate([0,-30,6]) %cube([120.584,3,3],center=true);
