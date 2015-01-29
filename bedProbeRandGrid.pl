@@ -7,7 +7,7 @@
 $xOffset = 0;   $yOffset = 0;  # switch position relative to extruder tip
 $dx=15;#7.5;  # space between samples on grid
 $z0=13.33;  # start probe from this height
-$radMax = 70.1;  # No probes more than this far from center
+$radMax = 85;# 70.1;  # No probes more than this far from center
 ####
 
 $deg2rad = 3.14159/180;
@@ -77,7 +77,8 @@ G90 ; use absolute coordinates
 #;G1 Z$z0 ; back up off plate, probe complete
 #";
 
-local $reHome = 22;
+local $reHomeInterval = 64;
+local $reHome = $reHomeInterval;
 $n = $#x + 1;
 while($n > 0) {
     local $i = int(rand($n));
@@ -90,7 +91,7 @@ while($n > 0) {
     #$initialPause = 9;  # shorter pause for subsequent probes
 
     if ($reHome-- < 0) {
-	$reHome=20;
+	$reHome=$reHomeInterval;
 	print "G28 ; re-home, to try and combat drift?
 G4 P99
 G28

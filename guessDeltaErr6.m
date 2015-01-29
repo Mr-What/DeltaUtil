@@ -22,6 +22,10 @@
 % RETURN:  values added to DELTA_RADIUS1,2,3
 %          and tower offset(M666 X Y Z)
 %          settings which fit measurements
+%
+%  e.g.  add towerErr to M666 X Y Z and
+%        add radiusErr to M666 A B C (tower radii)
+
 function [radiusErr, towerErr] = guessDeltaErr6(DP0,meas)
 
 % initial data plot
@@ -44,8 +48,8 @@ DP.verbose = 0;
 [dErr,nEval,status,err] = SimplexMinimize(...
               @(p) deltaGuessErr(p,DP),...
    	      [0 0 0 0 0 0], 0.1+[0 0 0 0 0 0], 0.005+[0 0 0 0 0 0], 999)
-radiusErr = dErr(1:3);
-towerErr  = dErr(4:6);
+radiusErr =  dErr(1:3);
+towerErr  = -dErr(4:6);
 
 % plot delta parameter fit
 %errZ = deltaErrZ(dErr,GuessParams);
@@ -77,25 +81,9 @@ hold off
 
 end
 
-% Error metric for minimization
+% Error metric for minimization, uses full-model generic error function, deltaErrZ
 function err = deltaGuessErr(p,DP)
-%err = deltaErrZ(p,DP);
 err = deltaErrZ([p(4:6),p(1:3),0],DP);
 err = mean(err .* err);
 disp(sqrt(err))
 end
-
-%% retrieve whole error vector
-%function errZ = deltaErrZ(p,GP)
-%DP = struct('RodLen',GP.RodLen,...
-%            'radius',GP.radius+p(1:3));
-%err = 0;
-%n = size(GP.meas,1);
-%errZ = zeros(n,1);
-%for i=1:n
-%  d0 = cart2delta(GP,[GP.meas(i,1),GP.meas(i,2),0]);
-%  de = d0 + p(4:6);  % delta positions with position offset error
-%  dz = delta2cart(DP,[de(1),de(2),de(3)]);
-%  errZ(i) = dz(3) - GP.meas(i,3);
-%end
-%end
