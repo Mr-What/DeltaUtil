@@ -48,7 +48,14 @@ probes around 100 points, 3 times each, in random order to try
 and average out any backlash effects.
 Parameters can be edited to fit your printbed.
 </P>
-
+    <P>Be sure to clear any bed-leveling polynomial<PRE>
+	M668
+      </PRE>
+      before running this procedure.
+      The bed leveling polynomial will leave a residual bias in the Z position
+      after each G30 probe, providing unusable results.
+    </P>
+    
 <P>In a terminal window, run the follwing command:<pre>   perl extractProbeData.pl &gt; myBed.dat
 </pre>
 It will wait for input.
@@ -259,7 +266,7 @@ be estimated and reported as part of the calibration process.
      bed = load('myBed.dat');
      bed = sampleMeans(bed);
      bed(:,3)=bed(:,3) - zProbeOffset;
-     [te,re,de,spread,DP1] = deltaCalXYZ(rodLen,radii,...
+     [te,re,de,spread,DP1] = deltaCalXYZ(DP.RodLen,DP.radius,...
              'XYcalPoints.A.dat','XYcalPairs,dat','myXYdist.dat',...
              bed,endStops0)
 </PRE>
@@ -274,6 +281,13 @@ out the desired M666 command to set all calibration parameters under
 Otherwise, you can add the reported error estimates to your settings
 for endstops, delta radius (per each tower), diagonal rod length respectively.
 </P>
+<P>I have been noting some over-fitting on the full calibration process.
+  The over-fit seems to find a path to smaller mathematical fit error,
+  but by finding parameters that work with a non-physical RodLen setting.
+  Work will continue to limit this issue, but for now I am trying to stop
+  the search at a smaller number of iterations to return the fairly stable
+  solution found before the silly RodLen valley solution is located.
+  </P>
 <P>After full calibration, you may be left with some residual error
   on the bed tram (level-ness of bed).
   A trade-off was made between the assertion that the bed is perfectly
