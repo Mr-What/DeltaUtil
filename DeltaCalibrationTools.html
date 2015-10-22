@@ -236,6 +236,23 @@ We can estimate these unique delta radii with the command:<PRE>
 </TD></TR></TABLE>
 
 <TABLE><TR><TD>
+
+      <H3>Bed tram polynomial</H3>
+      Once the tower offset and tower radii are fairly well calibrated,
+      you may still need a bed tramming polynomial adjustment to get
+      good first layer adhesion.
+      Take another probe of the bed, and feed the bed probe data
+      into:<PRE>
+	c = plotParabolicFit(bed);
+      </PRE>
+      This script will, in addition to diagnostic plots, print out
+      the M668 command you should enter for the bed tramming polynomial.
+
+      <P>
+When parameters seem to be good enough to print, use <PRE>
+	M500
+</PRE> to save them to the EEPROM.
+      
 <HR>
 <H2>Full Calibration</H2>
 <IMG width="25%" align="left" SRC="flatBed.png">
@@ -243,12 +260,15 @@ We can estimate these unique delta radii with the command:<PRE>
 Once you have the basic bed calibration close enough to print, from the
 above procedure you can continue to the full calibration procedure.
 
-<IMG width="20%" align="right" SRC="deltaTestA.png">
-<P>Clear any auto-bed-leveling (tram) adjustments, and perform a
-thorough bed level probe, saving the data.
+<!-- IMG width="20%" align="right" SRC="deltaTestA.png" -->
+<IMG width="20%" align="right" SRC="deltaTestB.png">
+<P>Clear any auto-bed-leveling (tram) adjustments,<PRE>
+	  M668</PRE>
+and perform a thorough bed level probe, saving the data.
 Do bed-leveling (tram) adjustments as necessary to be able to print.
   Then print the
-<A HREF="deltaTestA.scad">
+<!-- A HREF="deltaTestA.scad" -->
+<A HREF="calGrid.scad">
 calibration object</A>.
 
 <P>The command<PRE>
@@ -270,14 +290,15 @@ be estimated and reported as part of the calibration process.
              'XYcalPoints.A.dat','XYcalPairs,dat','myXYdist.dat',...
              bed,endStops0)
 </PRE>
-<IMG width="40%" align="right" SRC="deltaTestA.svg">
+<!-- IMG width="40%" align="right" SRC="deltaTestA.svg" -->
+<IMG width="40%" align="right" SRC="calGrid.png">
 where rodLen is diagonal rod length, measured.
 radii are the delta tower radii, individual for each tower.
 Names of measurement definition files, and cal print measurements.
 if you provide endStops0, there is code that will automatically
 add the endstop error estimate, te, to these endstops, and print
 out the desired M666 command to set all calibration parameters under
-<A HREF="https://github.com/Mr-What/DeltaUtil">Mr-What's fork of Johann's Marlin</A>.
+<A HREF="https://github.com/Mr-What/Marlin">Mr-What's fork of Johann's Marlin</A>.
 Otherwise, you can add the reported error estimates to your settings
 for endstops, delta radius (per each tower), diagonal rod length respectively.
 </P>
@@ -297,7 +318,7 @@ for endstops, delta radius (per each tower), diagonal rod length respectively.
   to set a bed-tramming polynomial.
   The command:<PRE>
     c = plotParabolicFit(bed)
-</PRE> will provide the command to set this correction,
+</PRE> will provide the M668 command to set this correction,
   as well as a diagnostic plot.
   <BR>Note that the A term is a constant offset in this polynomial.
   If you wish to move the entire print closer to or farther from the printbed
