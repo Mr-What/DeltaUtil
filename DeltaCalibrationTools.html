@@ -272,13 +272,20 @@ Do bed-leveling (tram) adjustments as necessary to be able to print.
 calibration object</A>.
 
 <P>The command<PRE>
-     computeCalDist.pl XYcalPointsA.dat XYcalPairsA.dat > XYcalDist.dat
+     computeCalDist.pl XYcalPointsB.dat XYcalPairsB.dat > XYcalDistB30.dat
 </PRE>
 will produce a file of ideal measurements on this test object.
 Using the figure shown here, edit this file to show the values of these
-distances as measured with calipers.
-Do not attempt to adjust for printer spread.  Printer spread will
+  distances as measured with calipers.
+
+<P>Do not attempt to adjust for printer spread.
+Printer spread will
 be estimated and reported as part of the calibration process.
+
+<P>XYcalPointsB.dat needs to be scaled as appropriate for the scale/spacing
+  of your calibration grid.
+  This distancs is set by the spc parameter in <TT>calGrid.scad</TT>.
+  The calPoints file can be computed by the <TT>calGridPointGen.m</TT> octave script.  Make sure that the setting for spc in the octave script matches the one used in the .scad file used to generate the .stl model.
 
 <P>Load the bed probe as described above, and adjust for probe sensor offset.
 
@@ -286,9 +293,10 @@ be estimated and reported as part of the calibration process.
      bed = load('myBed.dat');
      bed = sampleMeans(bed);
      bed(:,3)=bed(:,3) - zProbeOffset;
+     myDist='dat/dist15A1.dat';
      [te,re,de,spread,DP1] = deltaCalXYZ(DP.RodLen,DP.radius,...
-             'XYcalPoints.A.dat','XYcalPairs,dat','myXYdist.dat',...
-             bed,endStops0)
+             'XYcalPointsB30.dat','XYcalPairsB.dat',myDist,...
+             bed,endStops0);
 </PRE>
 <!-- IMG width="40%" align="right" SRC="deltaTestA.svg" -->
 <IMG width="40%" align="right" SRC="calGrid.png">

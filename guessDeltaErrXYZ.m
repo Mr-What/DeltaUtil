@@ -21,13 +21,15 @@
 %      meas      -- measurements of test print, from loadXYcalMeas(XYcal,...)
 %      bed       -- bed measurements, adjusted for probe offset
 %
+% [seed] -- used if provided to start search
+%
 % RETURN:  values to SUBTRACT from :
 %             towerZErr -- endstop offsets
 %             radiusErr -- DELTA_RADIUS1,2,3 settings
 %             diagErr   -- diagonal rod length (RodLen)
 %    also...
 %             spread    -- estimate of printer spread (mm)
-function [towerZErr, radiusErr, diagErr, spread] = guessDeltaErrXYZ(DP)
+function [towerZErr, radiusErr, diagErr, spread] = guessDeltaErrXYZ(DP,seed)
 global DeltaErr
 DP.verbose=1;  % set desired diagnostic verbosity
 
@@ -51,14 +53,23 @@ pause(0.1); % forces plot to display, so we can review it while computing
 %seed = [0,0,0,DP.radius-109.5,DP.RodLen-217.95,.1];
 
 step = [1 1 1  1 1 1  1 0.3]*0.1; % initial step
-randStep = step*4;%/4;  % *2
-seed = [0 0 0  0 0 0  0  .1];
-% hack to try and double check a good-looking minima
-%seed = [-.27 .16 .06  1.4 -1.4 -.5 -.1 .1];
-%seed = [0 0 0   1 -1 .3   0 .1];
-seed = seed + (rand(1,8)+rand(1,8)-1) .* randStep;  % randomize seed to test convergence
+maxSteps = 500; %370; % 1000
+
+if (nargin < 2)
+   randStep = step*4;%/4;  % *2
+   seed = [0 0 0  0 0 0  0  .1];
+
+   % hack to try and double check a good-looking minima
+   %seed = [-.27 .16 .06  1.4 -1.4 -.5 -.1 .1];
+   %seed = [0 0 0   1 -1 .3   0 .1];
+   %seed = [0 0 0   0 0 0   -.1 .1];
+
+   seed = seed + (rand(1,8)+rand(1,8)-1) .* randStep;  % randomize seed to test convergence
+end
+
+
 [dErr,nEval,status,err] = SimplexMinimize(...
-      @(p) deltaGuessErrXYZ(p,DP),seed,step,step/10,1000,.01);
+      @(p) deltaGuessErrXYZ(p,DP),seed,step,step/10,maxSteps,.01);
 towerZErr = dErr(1:3);
 radiusErr = dErr(4:6);
 diagErr   = dErr(7);
@@ -112,6 +123,7 @@ end
 function err = deltaGuessErrXYZ(p,DP)
 global DeltaErr
 DeltaErr.n = DeltaErr.n + 1;
+DeltaErr.p(DeltaErr.n,:) = p;
 
 err = deltaErrXY(p,DP);
 errXY = mean(err .* err);

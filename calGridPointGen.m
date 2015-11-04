@@ -1,6 +1,6 @@
 % generate calibration points, standard pattern, for calGrid, pattern B
 wr=5;
-spc=35;
+spc=30;
 
 spcX=spc/2;
 spcY=spc*sind(60);

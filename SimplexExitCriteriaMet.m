@@ -1,5 +1,11 @@
 % Return true if exit criteria met
-
+%
+% seperate from SimplexMinimize.m file since users may want
+% to change this criteria.  The basic algorithm in SimplexMinimize.m
+% should be pretty stable.
+%
+%    aaron birenboim, 11/2015
+   
 function a = SimplexExitCriteriaMet(simplex,smallBox,nEvalSinceNewLow,errEps)
 
 % exit when simplex can be bound within a smallBox, and
@@ -42,4 +48,4 @@ for i=2:n;
 end
 box = hi - lo;
 a = (length(find(hi - lo > smallBox)) <=  0);
-%if (a), disp('smallbox'); end
+if (a), disp('smallbox'); end

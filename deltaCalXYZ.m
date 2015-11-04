@@ -19,7 +19,7 @@
 %             spread    -- estimate of printer spread (mm)
 %             [DP]      -- full structure of test data
 function [towerZErr, radiusErr, diagErr, spread,DP] = ...
-      deltaCalXYZ(rodLen,radii,xyPointsFile,xyPairsFile,xyMeasFile,bedMeas,oldEndstops)
+      deltaCalXYZ(rodLen,radii,xyPointsFile,xyPairsFile,xyMeasFile,bedMeas,oldEndstops,seed)
 DP.verbose=1;  % set desired diagnostic verbosity
 DP.RodLen = rodLen;
 if (length(radii)==1), radii=radii*[1 1 1]; end
@@ -31,7 +31,11 @@ n=size(DP.bed.xyz,1);
 DP.bed.twr = zeros(n,3); % compute tower commands which touched bed
 for i=1:n, DP.bed.twr(i,:) = cart2delta(DP,DP.bed.xyz(i,:)); end
 
-[towerZErr, radiusErr, diagErr, spread] = guessDeltaErrXYZ(DP)
+if (nargin > 7)
+  [towerZErr, radiusErr, diagErr, spread] = guessDeltaErrXYZ(DP,seed)
+else
+  [towerZErr, radiusErr, diagErr, spread] = guessDeltaErrXYZ(DP)
+end
 
 DP.est.radius = DP.radius + radiusErr;  % note recommended settings
 DP.est.RodLen = DP.RodLen + diagErr;
