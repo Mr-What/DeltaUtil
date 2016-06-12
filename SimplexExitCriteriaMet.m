@@ -1,6 +1,6 @@
 % Return true if exit criteria met
 %
-% seperate from SimplexMinimize.m file since users may want
+% separate from SimplexMinimize.m file since users may want
 % to change this criteria.  The basic algorithm in SimplexMinimize.m
 % should be pretty stable.
 %

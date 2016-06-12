@@ -15,7 +15,7 @@
 %       RADIUS   -- Marlin DELTA_RADIUS, which is radius from tip to center
 %                   of tower pivot for diagonal arm, minus effector offset
 %                   (kind of a radius - effector_offset)
-% XOR   radius(3) -- independant radii
+% XOR   radius(3) -- independent radii
 %       RodLen   -- length between center of pivots on diagonal rods
 %
 % RETURN:  values to ADD to tower offset(M666 X Y Z)
