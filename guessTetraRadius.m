@@ -1,78 +1,68 @@
-% Given a set of measurements on the bed surface, guess
-% the delta_radius which is most likely to have 
+% Given a set of measurements on the bed surface,
+% made with the given tilted delta parameters,
+% guess the delta_radius which is most likely to have 
 % caused this distortion.
 %
 % probe data is (n,3) where columns are:
 %     commanded X,  commanded Y,  probed Z
 %
+% [IGP]  -- initial guess delta config, if not same as PP
+%
 % RETURN:  revised parameter set
-function pp = guessTetraRadius(tp,probe)
+function tp = guessTetraRadius(PP,IGP)
 
-% initial data plot
-figure(2);
-hold off;
-[c,ax,pFit] = plotParabolicFit(probe);
-grid on;hold on;
-plot3(probe(:,1),probe(:,2),probe(:,3),'+');
-title('Parabolic fit to measurements, + is measurements, . are fit points');
-pause(0.1);
+% retrieve full parameter set for initial guess
+    if nargin < 2
+        gp = getTetraParams(PP.p);
+    else
+        gp = getTetraParams(IGP);
+    end
 
-GuessParams = tp;
-GuessParams.probe = probe;
-GuessParams.verbose = 0;
-[fit,nEval,status,err] = SimplexMinimize(...
-              @(p) tetraRadiusErr(p,GuessParams),...
-   	      tp.p.delta_radius(1), 1, 0.004, 300)
-pp = tp.p;
-pp.delta_radius = [0,0,0] + fit;
-pp = getTetraParams(pp);  % re-compute kinematic params
+    if !isfield(PP,'pos')
+        PP = getProbePositions(PP.p,PP.probe);  % append stepper positions
+    end
 
-% plot delta parameter fit
-%errZ = deltaEndstopErrZ(dErr,GuessParams);
-%plot3(meas(:,1),meas(:,2),errZ+meas(:,3),'r.');
-%#legend('Parabolic Fit to measurements','Measured','Delta Fit Points');
-%xlabel('X');ylabel('Y');
-%hold off
+    figure(2); [c,ax,pFit] = plotInitialProbe(PP.probe);  % initial data plot
 
-%figure(3);
-%hold off;
-%fm = meas; fm(:,3) = fm(:,3)+errZ;
-%c = plotParabolicFit(fm);
-%grid on;hold on;
-%plot3(fm(:,1),fm(:,2),fm(:,3),'+');
-%hold off;
-%title('Parabolic Fit to simulated points');
-%xlabel('X');ylabel('Y');
+    gp.verbose = 0;
+    initialGuess = mean(gp.p.delta_radius);
+    initialStep = 1;
+    smallBox = 0.002;
+    maxIterations = 222;
+    [fit,nEval,status,err] = SimplexMinimize(...
+        @(p) tetraProbeErr(p, PP, gp, @tetraRadiusErrZ),...
+   	initialGuess, initialStep, smallBox, maxIterations)
+    tp = gp.p;  % re-compute full kinematic params
+    tp.delta_radius = [0,0,0] + fit;
+    tp = getTetraParams(tp);  % re-compute kinematic params
 
-%figure(1);
-%hold off
-%plot3(meas(:,1),meas(:,2),meas(:,3),'+');
-%grid on;hold on;
-%plot3(meas(:,1),meas(:,2),errZ+meas(:,3),'rx');
-%legend('Measured','Fitted Points');
-%xlabel('X');ylabel('Y');
-%hold off
-
+    % plot delta parameter fit
+    errZ = tetraRadiusErrZ(fit,PP,gp);
+    figure(1); plotProbeFit(PP.probe, errZ); hold off
 end
 
 %-- ============================================ Error metric for minimization
-function err = tetraRadiusErr(p,DP)
-    err = tetraRadiusErrZ(p,DP);
-    err = mean(err .* err);
-    disp([sqrt(err),p]);
-end
 
 % retrieve whole error vector
-function errZ = tetraRadiusErrZ(p,DP)
+function [errZ,bad] = tetraRadiusErrZ(p,PP, igp)
     err = 0;
-    tp = DP.p;
+    tp = igp.p;
     tp.delta_radius = [0,0,0] + p;
     tp = getTetraParams(tp);  % re-compute kinematic parameters
-    n = size(DP.probe,1);
+    n = size(PP.probe,1);
     errZ = zeros(n,1);
+    bad = int32(errZ);
     for i=1:n
-        d0 = cart2tetra(DP.k,DP.probe(i,:)); % commanded servo pos
-        dz = tetra2cart(tp.k,d0); % cart from guess parameters
+        %d0 = cart2tetra(DP.k,DP.probe(i,:)); % commanded servo pos
+        %if !isreal(d0)
+        %    bad(i)=1;
+        %    d0 = abs(d0);
+        %end
+        dz = tetra2cart(tp.k, PP.pos(i,:)); % cart from guess parameters
+        if !isreal(dz)
+            bad(i)=1;
+            dz = real(dz);
+        end
         errZ(i) = dz(3);
     end
 end

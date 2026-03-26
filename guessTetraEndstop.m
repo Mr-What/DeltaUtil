@@ -2,92 +2,67 @@
 % the tower endstop errors that are most
 % likely to have caused this distortion.
 %
-% DP are full tilted delta parameters as returned by getTetraParams()
-% probe is (n,3) where columns are bed probe returns:
+% PP are full tilted delta probe parameters as returned by getTetraParams(),
+%    which were being used when the included probe results were measured.
+%    These (n,3) probe commands when probe was triggered are included
+%    along with the parameters.
+% [IGP] -- optional Initial Guess Parameters to seed the search.  Default == PP.
+%            We may want to implement a piecewise approach to finding
+%            parameters, so that the initial guess may not be the
+%            parameters used when the probe was measured.
+%
+%    probe is (n,3) where columns are bed probe returns:
 %       Commanded X, commanded Y, Z-probe 
-function tp = guessTetraEndstop(DP,probe)
+function tp = guessTetraEndstop(PP,IGP)
 
-% initial data plot
-figure(2);
-hold off;
-[c,ax,pFit] = plotParabolicFit(probe);
-grid on;hold on;
-plot3(probe(:,1),probe(:,2),probe(:,3),'+');
-title('Parabolic fit to measurements, + is measurements, . are fit points');
-pause(0.1);
+    if nargin < 2
+        gp = getTetraParams(PP.p);
+    else
+        gp = getTetraParams(IGP);
+    end
 
-GuessParams = getTetraParams(DP.p);  % re-compute from cfg params
-GuessParams.probe = probe;
-GuessParams.verbose = 0;
-initialGuess = DP.p.endstop_distance  % cariage axis pos, mm along rail from z=0
-initialStep = [1,1,1];
-smallBox = [0,0,0]+0.004;
-maxIterations=444;
-[fit,nEval,status,err] = SimplexMinimize(...
-              @(p) tetraGuessEndstopErr(p,GuessParams),...
+    if !isfield(PP,'pos')
+        PP = getProbePositions(PP.p,PP.probe);  % append stepper positions
+    end
+
+    figure(2); [c,ax,pFit] = plotInitialProbe(PP.probe);  % initial data plot
+    
+    gp.verbose = 0;
+    initialGuess = gp.p.endstop_distance  % cariage axis pos, mm along rail from z=0
+    initialStep = [1,1,1];
+    smallBox = [0,0,0]+0.004;
+    maxIterations=444;
+    [fit,nEval,status,err] = SimplexMinimize(...
+        @(p) tetraProbeErr(p,PP,gp, @tetraEndstopErrZ),...
    	      initialGuess, initialStep, smallBox, maxIterations)
 
-% plot delta parameter fit
-errZ = tetraEndstopErrZ(fit,GuessParams);
-plot3(probe(:,1),probe(:,2),errZ+probe(:,3),'r.');
-#legend('Parabolic Fit to measurements','Measured','Delta Fit Points');
-xlabel('X');ylabel('Y');
-hold off
+    % plot delta parameter fit
+    errZ = tetraEndstopErrZ(fit,PP,gp);
+    figure(1); plotProbeFit(PP.probe, errZ); hold off;
 
-figure(3);
-hold off;
-fm = probe; fm(:,3) = fm(:,3)+errZ;
-c = plotParabolicFit(fm);
-grid on;hold on;
-plot3(fm(:,1),fm(:,2),fm(:,3),'+');
-hold off;
-title('Parabolic Fit to simulated points');
-xlabel('X');ylabel('Y');
-
-figure(1);
-hold off
-plot3(probe(:,1),probe(:,2),probe(:,3),'+');
-grid on;hold on;
-plot3(probe(:,1),probe(:,2),errZ+probe(:,3),'rx');
-legend('Measured','Fitted Points');
-xlabel('X');ylabel('Y');
-hold off
-
-tp = GuessParams.p;
-tp.endstop_distance = fit
-tp = getTetraParams(tp);  % re-construct kinematic params
+    tp = gp.p;  % re-compute full parameters for fit
+    tp.endstop_distance = fit;
+    tp = getTetraParams(tp);
 end
 
 %-- ============================================ Error metric for minimization
-function err = tetraGuessEndstopErr(p,DP)
-    [err0,bad] = tetraEndstopErrZ(p,DP);
-    nBad = sum(bad);
-    e = err0(find(bad==0));
-    err = mean(e .* e) * (1+nBad);  % add penalty for number of bad probes
-    if (nBad > 0)
-        badProbe = find(bad>0)'
-        badProbe = DP.probe(badProbe',:)
-    end
-    disp([sqrt(err)*1000,p]);
-end
-
-% retrieve whole error vector
-function [errZ,bad] = tetraEndstopErrZ(p,DP)
+function [errZ,bad] = tetraEndstopErrZ(p,pp,igp)
     err = 0;
-    n = size(DP.probe,1);
+    n = size(pp.probe,1);
     errZ = zeros(n,1);
     bad = int32(errZ);
+    de = pp.p.endstop_distance - p;  % difference in endstops
     for i=1:n
-        d0 = cart2tetra(DP.k,DP.probe(i,:));  % commanded position
-
+        %d0 = cart2tetra(DP.k,DP.probe(i,:));  % commanded position
+        %
         % insert endstop error to positions
-        if !isreal(d0)
-            bad(i)=1;
-            d0 = abs(d0);
-        end
-        de = d0 + DP.p.endstop_distance-p;
+        %if !isreal(d0)
+        %    bad(i)=1;
+        %    d0 = abs(d0);
+        %end
+        pos = pp.pos(i,:) + de;
         
-        dz = tetra2cart(DP.k,de); % effector loc if endstops were at guess
+        dz = tetra2cart(igp.k, pos); % effector loc if endstops were at guess
         if !isreal(dz)
             bad(i) = 1;
         end

@@ -22,10 +22,11 @@ for i=1:n
 end
 meshc(ax,ax,z);
 hold on;
-plot3(meas(:,1),meas(:,2),meas(:,3),'.');
-cmd = sprintf('M668 A%.4f B%.6f C%.6f D%.8f E%.8f F%.8f',c);
-disp(cmd)
-title(cmd)
+plot3(meas(:,1),meas(:,2),meas(:,3),'+');
+%cmd = sprintf('M668 A%.4f B%.6f C%.6f D%.8f E%.8f F%.8f',c);
+%disp(cmd)
+%title(cmd)
+
 end
 
 function c = parabolicFit(meas)
