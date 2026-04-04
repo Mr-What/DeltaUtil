@@ -12,9 +12,9 @@ p0.tilt_tangential = [0,0,0];
 p0.endstop_distance = [500,500,500];
 p0 = getTetraParams(p0)
 
-tp = p0;  % test purtutbation parameters
-tp.p.delta_radius = tp.p.delta_radius-2;
-tp = getTetraParams(tp.p)
+tp = p0.p;  % test purtutbation parameters
+tp.delta_radius = tp.delta_radius-2;
+tp = getTetraParams(tp)  % reconstruct internal kinematic parameters
 
 n = length(v);
 x = repmat(v,n,1);

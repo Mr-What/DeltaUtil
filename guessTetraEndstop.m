@@ -28,7 +28,7 @@ function tp = guessTetraEndstop(PP,IGP)
     figure(2); [c,ax,pFit] = plotInitialProbe(PP.probe);  % initial data plot
     
     gp.verbose = 0;
-    initialGuess = gp.p.endstop_distance  % cariage axis pos, mm along rail from z=0
+    initialGuess = gp.p.position_endstops  % cariage axis pos, mm along rail from z=0
     initialStep = [1,1,1];
     smallBox = [0,0,0]+0.004;
     maxIterations=444;
@@ -41,7 +41,7 @@ function tp = guessTetraEndstop(PP,IGP)
     figure(1); plotProbeFit(PP.probe, errZ); hold off;
 
     tp = gp.p;  % re-compute full parameters for fit
-    tp.endstop_distance = fit;
+    tp.endstop_distances = fit;
     tp = getTetraParams(tp);
 end
 
@@ -51,7 +51,7 @@ function [errZ,bad] = tetraEndstopErrZ(p,pp,igp)
     n = size(pp.probe,1);
     errZ = zeros(n,1);
     bad = int32(errZ);
-    de = pp.p.endstop_distance - p;  % difference in endstops
+    de = pp.p.position_endstops - p;  % difference in endstops
     for i=1:n
         %d0 = cart2tetra(DP.k,DP.probe(i,:));  % commanded position
         %

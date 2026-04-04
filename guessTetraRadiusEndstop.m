@@ -44,7 +44,7 @@ function tp = guessTetraRadiusEndstop(PP,IGP)
 
     % return refined tetra (tilted) parameter set
     tp = gp.p;
-    tp.endstop_distance = fit(1:3);
+    tp.endstop_distances = fit(1:3);
     tp.delta_radius = [0,0,0] + fit(4);
     tp = getTetraParams(tp);  % re-construct kinematic params
 end
