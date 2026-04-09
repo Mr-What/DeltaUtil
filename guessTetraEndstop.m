@@ -14,6 +14,8 @@
 %    probe is (n,3) where columns are bed probe returns:
 %       Commanded X, commanded Y, Z-probe 
 function tp = guessTetraEndstop(PP,IGP)
+    global callCount;
+    callCount = 0;
 
     if nargin < 2
         gp = getTetraParams(PP.p);
@@ -33,39 +35,21 @@ function tp = guessTetraEndstop(PP,IGP)
     smallBox = [0,0,0]+0.004;
     maxIterations=444;
     [fit,nEval,status,err] = SimplexMinimize(...
-        @(p) tetraProbeErr(p,PP,gp, @tetraEndstopErrZ),...
+        @(p) tetraFitErr(p,PP,gp, @setTetraEndstop),...
    	      initialGuess, initialStep, smallBox, maxIterations)
 
     % plot delta parameter fit
-    errZ = tetraEndstopErrZ(fit,PP,gp);
+    [err,errZ] = tetraFitErr(fit,PP,gp,@setTetraEndstop);
     figure(1); plotProbeFit(PP.probe, errZ); hold off;
 
     tp = gp.p;  % re-compute full parameters for fit
-    tp.endstop_distances = fit;
+    tp.position_endstops = fit;
     tp = getTetraParams(tp);
 end
 
-%-- ============================================ Error metric for minimization
-function [errZ,bad] = tetraEndstopErrZ(p,pp,igp)
-    err = 0;
-    n = size(pp.probe,1);
-    errZ = zeros(n,1);
-    bad = int32(errZ);
-    de = pp.p.position_endstops - p;  % difference in endstops
-    for i=1:n
-        %d0 = cart2tetra(DP.k,DP.probe(i,:));  % commanded position
-        %
-        % insert endstop error to positions
-        %if !isreal(d0)
-        %    bad(i)=1;
-        %    d0 = abs(d0);
-        %end
-        pos = pp.pos(i,:) + de;
-        
-        dz = tetra2cart(igp.k, pos); % effector loc if endstops were at guess
-        if !isreal(dz)
-            bad(i) = 1;
-        end
-        errZ(i) = real(dz(3));
-    end
+% ---------- copy parameter vector into fields of parameter structure
+function gp = setTetraEndstop(p,igp)
+    gp = igp.p;
+    gp.position_endstops = p;
+    gp = getTetraParams(gp);  % re-build kinetic parameters
 end

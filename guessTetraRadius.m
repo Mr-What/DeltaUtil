@@ -10,8 +10,10 @@
 %
 % RETURN:  revised parameter set
 function tp = guessTetraRadius(PP,IGP)
-
-% retrieve full parameter set for initial guess
+    global callCount;
+    callCount = 0;
+    
+    % retrieve full parameter set for initial guess
     if nargin < 2
         gp = getTetraParams(PP.p);
     else
@@ -30,39 +32,21 @@ function tp = guessTetraRadius(PP,IGP)
     smallBox = 0.002;
     maxIterations = 222;
     [fit,nEval,status,err] = SimplexMinimize(...
-        @(p) tetraProbeErr(p, PP, gp, @tetraRadiusErrZ),...
+        @(p) tetraFitErr(p, PP, gp, @setTetraRadius),...
    	initialGuess, initialStep, smallBox, maxIterations)
     tp = gp.p;  % re-compute full kinematic params
     tp.delta_radius = [0,0,0] + fit;
     tp = getTetraParams(tp);  % re-compute kinematic params
 
     % plot delta parameter fit
-    errZ = tetraRadiusErrZ(fit,PP,gp);
+    [err,errZ] = tetraFitErr(fit,PP,gp,@setTetraRadius);
+    %errZ = tetraRadiusErrZ(fit,PP,gp);
     figure(1); plotProbeFit(PP.probe, errZ); hold off
 end
 
-%-- ============================================ Error metric for minimization
-
-% retrieve whole error vector
-function [errZ,bad] = tetraRadiusErrZ(p,PP, igp)
-    err = 0;
-    tp = igp.p;
-    tp.delta_radius = [0,0,0] + p;
-    tp = getTetraParams(tp);  % re-compute kinematic parameters
-    n = size(PP.probe,1);
-    errZ = zeros(n,1);
-    bad = int32(errZ);
-    for i=1:n
-        %d0 = cart2tetra(DP.k,DP.probe(i,:)); % commanded servo pos
-        %if !isreal(d0)
-        %    bad(i)=1;
-        %    d0 = abs(d0);
-        %end
-        dz = tetra2cart(tp.k, PP.pos(i,:)); % cart from guess parameters
-        if !isreal(dz)
-            bad(i)=1;
-            dz = real(dz);
-        end
-        errZ(i) = dz(3);
-    end
+% set printer parameters from simplex search vector
+function gp = setTetraRadius(p,igp)
+    gp = igp.p;
+    gp.delta_radius = [0,0,0] + p;
+    gp = getTetraParams(gp);  % re-build kinematic params
 end
