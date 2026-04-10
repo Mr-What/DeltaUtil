@@ -15,7 +15,7 @@
 %
 % Return an appended full probe parameter strucure with readings
 % and associated tower stepper positions
-function tp = getTowerPositions(PP,probe, measXYdat, measCmd)
+function tp = appendTowerPositions(PP,probe, measXYdat, measCmd)
     tp = getTetraParams(PP);  % re-construct kinematic parameters
     m = size(probe,1);
     pos = zeros(m,3);
@@ -57,15 +57,18 @@ function tp = getTowerPositions(PP,probe, measXYdat, measCmd)
         end
         pid = ['p', nam];
         if !ismember(pid, fnDef)
+            fprintf(2,'no matching ideal %s for measurement %s.\n',pid,nam);
             contuinue;  % no defn for measurement ID
         end
         p = measCmd.(pid);
         p1 = cart2tetra(tp.k,[p(1,:),0]);
         if !isreal(p1)
+            fprintf(2,'[%.3f, %.3f, 0] outside envelope.  ignored.\n');
             continue;  % bad measurement point
         end
         p2 = cart2tetra(tp.k,[p(2,:),0]);
         if !isreal(p2)
+            fprintf(2,'[%.3f, %.3f, 0] outside envelope.  ignored.\n');
             continue;  % bad measurement point
         end
         n=n+1;
@@ -73,7 +76,7 @@ function tp = getTowerPositions(PP,probe, measXYdat, measCmd)
         cmd(n,:) = [p(1,:), 0, p(2,:), 0]; % commanded measurement locations
         ideal(n) = norm(p(1,:) - p(2,:)); % expected measurement
         twr(n,:) = [p1, p2]; % commanded tower positions at measurement
-        dist(n) = measXYdat.(nam); % printed distance measurement
+        dist(n) = measXYdat.(nam); % cal print distance measurement
     end
     % truncate to only "good" data in output struct
     tp.measXY = struct('cmd'  ,   cmd(1:n,:),...

@@ -90,10 +90,9 @@ function [tProbe, pos0, tetCmd, tet0, nBad] = simulateBedProbe(probe, kp, k0)
             continue;
         end
 
-        tetTrue = adjustTowers(tet,...
-                               kp.endstop, kp.rotation, ...
-                               k0.endstop, k0.rotation);
-        
+        % adjust tower positions for stepper parameter differences, if any
+        tetTrue = commandedTowerPositions(kp,tet,k0);
+      
         tPos = tetra2cart(k0,tetTrue); % truth pos from true tetra positions
         if !isreal(tPos)
             bad(j)=1;
@@ -121,13 +120,4 @@ function [tProbe, pos0, tetCmd, tet0, nBad] = simulateBedProbe(probe, kp, k0)
         tet0 = tet0(j,:);
         pos0 = pos0(j,:);
     end
-end
-
-% adjust carriage positions computed, tet, for errors in
-% tower stepper calibration
-% endstop,  drot  : configured stepper calibration
-% endstop0, drot0 : true stepper parameters
-function tetTrue = adjustTowers(tet, endstop, dRot, endstop0, dRot0)
-    nRot = (endstop - tet) ./ dRot;  % commanded rotations down from endstop
-    tetTrue = endstop0 - (dRot0 .* nRot);
 end

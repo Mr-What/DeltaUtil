@@ -57,7 +57,7 @@ function [err, errXY, bad] = tetraPrintErr(pk, pm, gk)
     % update tower positions for differences in stepper calibration, if any.
     twr1 = commandedTowerPositions(pk, pm.twr(:,1:3), gk);
     twr2 = commandedTowerPositions(pk, pm.twr(:,4:6), gk);
-
+    
     err = 0;
     n = size(pm.twr,1);
     m = 1;
@@ -66,8 +66,10 @@ function [err, errXY, bad] = tetraPrintErr(pk, pm, gk)
     for j=1:n
         xyz1 = tetra2cart(gk, twr1(j,:));  % guess at actual effector position
         xyz2 = tetra2cart(gk, twr2(j,:));  % guess at actual effector position
-        if isreal(xyz1) && isreal(xyz2)
-            errXY(j) = norm(xyz1(1:2) - xyz2(1:2)) - pm.ideal(j);
+        if (isreal(xyz1) && isreal(xyz2))
+            simulatedDistance = norm(xyz1(1:2) - xyz2(1:2));
+            measuredDistance = pm.dist(j);
+            errXY(j) = measuredDistance - simulatedDistance;
         else
             bad(j)=1;
         end
@@ -80,4 +82,5 @@ function [err, errXY, bad] = tetraPrintErr(pk, pm, gk)
         err = mean(errXY .* errXY); % more weight than bed probe errors
     end
     %fprintf(2,'\tXY measurement MSE=%.6g',err);
+    %hold off; plot(errXY,'x'); grid on; ginput(1)
 end
