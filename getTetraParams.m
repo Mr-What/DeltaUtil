@@ -1,1 +1,0 @@
-../Tetra3D/tools/getTetraParams.m

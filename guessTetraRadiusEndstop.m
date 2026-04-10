@@ -30,9 +30,6 @@ function tp = guessTetraRadiusEndstop(PP,IGP)
         gp = getTetraParams(IGP);
     end
     gp.verbose = 0;
-%    @setParametersFromVector(p,igp) -- Function to set printer parameters
-%                 from an optimization search vector
-%
 
     initialGuess = [gp.p.position_endstops, mean(gp.p.delta_radius)];
     initialStep = [1,1,1,1];
@@ -41,7 +38,6 @@ function tp = guessTetraRadiusEndstop(PP,IGP)
     [fit,nEval,status,err] = SimplexMinimize(...
         @(p) tetraFitErr(p,PP,gp,@setTetraRadiusEndstop),...
    	initialGuess, initialStep, smallBox, maxIterations)
-    %@(p) tetraProbeErr(p,PP,gp, @tetraRadiusEndstopErrZ),...
 
     % plot parameter fit, retrieve full parameter vector(s)
     [err,errZ,badZ,errXY,badXY] = tetraFitErr(fit,PP,gp,@setTetraRadiusEndstop);
