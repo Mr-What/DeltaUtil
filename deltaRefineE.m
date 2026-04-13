@@ -13,7 +13,7 @@
 %
 %    probe is (n,3) where columns are bed probe returns:
 %       Commanded X, commanded Y, Z-probe 
-function tp = guessTetraEndstop(PP,IGP)
+function tp = deltaRefineE(PP,IGP)
     global callCount;
     callCount = 0;
 

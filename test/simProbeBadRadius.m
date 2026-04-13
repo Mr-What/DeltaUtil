@@ -27,7 +27,7 @@ xyIdeal = loadAsStruct('idealDeltaCalMeas10_60.m');
 xyMeas = simulateTetraXYmeas(tp,p0,xyIdeal); % simulate measured cal print data
 
 % compute tower positions for all tests points, and store in tp struct
-%tp = getTowerPositions(tp.p, probe);
-tp = appendTowerPositions(tp.p, probe, xyMeas, xyIdeal);
+tp = appendTowerPositions(tp.p, probe);  % no cal print
+%tp = appendTowerPositions(tp.p, probe, xyMeas, xyIdeal);
 
-gp = guessTetraRadius(tp)
+gp = deltaRefineR(tp)

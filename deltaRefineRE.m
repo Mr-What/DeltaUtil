@@ -17,7 +17,7 @@
 %             used in this optimization may not be the same as ones
 %             used for the original probe(s).
 %-
-function tp = guessTetraRadiusEndstop(PP,IGP)
+function tp = deltaRefineRE(PP,IGP)
     global callCount;
     callCount = 0;  % tetraFitErr() will count number of calls in SimplexMinimize
 
@@ -40,12 +40,6 @@ function tp = guessTetraRadiusEndstop(PP,IGP)
    	initialGuess, initialStep, smallBox, maxIterations)
 
     % check results with random perturbation?
-    %%initialGuess = fit + (rand(1,4)-.5) * .2;
-    %finalStep = fit - initialGuess
-    %finalStepLen = norm(finalStep)
-    %randStep = (finalStep/finalStepLen) + (rand(1,4)-.5) * .1;
-    %randStep = finalStepLen*.05 * randStep/norm(randStep)
-    %initialGuess = fit + randStep
     initialGuess = fit + 0.04 * (rand(1,4)-.5) .* (initialGuess - fit)
     callCount=0;  % tetraFitErr will count number of calls in SimplexMinimize
     [fit,nEval,status,err] = SimplexMinimize(...

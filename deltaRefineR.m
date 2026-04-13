@@ -1,15 +1,17 @@
 % Given a set of measurements on the bed surface,
 % made with the given tilted delta parameters,
-% guess the delta_radius which is most likely to have 
+% guess the delta_radius (R) which is most likely to have 
 % caused this distortion.
 %
 % probe data is (n,3) where columns are:
 %     commanded X,  commanded Y,  probed Z
 %
-% [IGP]  -- initial guess delta config, if not same as PP
+% PP        -- probed parameters.  Parameters used for the probe
+% PP.probe  -- probe data
+% [IGP]     -- initial guess parameters, if not same as PP
 %
 % RETURN:  revised parameter set
-function tp = guessTetraRadius(PP,IGP)
+function tp = deltaRefineR(PP,IGP)
     global callCount;
     callCount = 0;
     
