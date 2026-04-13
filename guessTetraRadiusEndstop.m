@@ -19,7 +19,7 @@
 %-
 function tp = guessTetraRadiusEndstop(PP,IGP)
     global callCount;
-    callCount = 0;
+    callCount = 0;  % tetraFitErr() will count number of calls in SimplexMinimize
 
     % ----- initial data plot
     figure(2); [c,ax,pFit] = plotInitialProbe(PP.probe);
@@ -33,18 +33,24 @@ function tp = guessTetraRadiusEndstop(PP,IGP)
 
     initialGuess = [gp.p.position_endstops, mean(gp.p.delta_radius)];
     initialStep = [1,1,1,1];
-    smallBox = [0,0,0,0]+0.004;
+    smallBox = [0,0,0,0]+0.04;
     maxIterations=444;
     [fit,nEval,status,err] = SimplexMinimize(...
         @(p) tetraFitErr(p,PP,gp,@setTetraRadiusEndstop),...
    	initialGuess, initialStep, smallBox, maxIterations)
 
     % check results with random perturbation?
-    initialGuess = fit + (rand(1,4)-.5) * .2;
-    callCount=0;
+    %%initialGuess = fit + (rand(1,4)-.5) * .2;
+    %finalStep = fit - initialGuess
+    %finalStepLen = norm(finalStep)
+    %randStep = (finalStep/finalStepLen) + (rand(1,4)-.5) * .1;
+    %randStep = finalStepLen*.05 * randStep/norm(randStep)
+    %initialGuess = fit + randStep
+    initialGuess = fit + 0.04 * (rand(1,4)-.5) .* (initialGuess - fit)
+    callCount=0;  % tetraFitErr will count number of calls in SimplexMinimize
     [fit,nEval,status,err] = SimplexMinimize(...
         @(p) tetraFitErr(p,PP,gp,@setTetraRadiusEndstop),...
-   	initialGuess, initialStep*.1, smallBox*.2, maxIterations)
+   	initialGuess, initialStep*.1, smallBox*.1, maxIterations)
     
     % return refined tetra (tilted) parameter set
     tp = setTetraRadiusEndstop(fit,gp);

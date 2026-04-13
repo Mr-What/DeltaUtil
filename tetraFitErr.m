@@ -79,7 +79,8 @@ function [err, errXY, bad] = tetraPrintErr(pk, pm, gk)
         err = errXY(find(bad == 0));
         err = mean(err .* err) ^ (nBad+1);  % penalty for out of envelope probe
     else
-        err = mean(errXY .* errXY); % more weight than bed probe errors
+        %err = mean(errXY .* errXY); % more weight than bed probe errors
+        err = sqrt(mean(errXY .* errXY));
     end
     %fprintf(2,'\tXY measurement MSE=%.6g',err);
     %hold off; plot(errXY,'x'); grid on; ginput(1)

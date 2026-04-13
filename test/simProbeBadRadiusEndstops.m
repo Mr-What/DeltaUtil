@@ -30,8 +30,14 @@ xyMeas = simulateTetraXYmeas(tp,p0,xyIdeal); % simulate measured cal print data
 % compute tower positions for all tests points, and store in tp struct
 %tp = appendTowerPositions(tp.p, probe);
 tp = appendTowerPositions(tp.p, probe, xyMeas, xyIdeal);
-gp = guessTetraRadiusEndstop(tp)
+gp = guessTetraRadiusEndstop(tp);
 
 % had small error when using measXY, when bed-only converted.
 % check by simulated annealing?
 %gp = guessTetraRadiusEndstop(tp,gp.p)
+
+% write out updates for klipper printer.cfg
+% make a config parameter structure containing only stuff to be updated:
+up.position_endstops = gp.p.position_endstops;
+up.delta_radius = gp.p.delta_radius;
+write_tilted_delta_update_cfg(up,'radiusEndstopUpdate.cfg');
